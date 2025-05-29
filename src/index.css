@@ -625,7 +625,7 @@ margin-bottom: 20px;
     color: var(--grey37-color);
 }
 .red-text {
-    color: var(--red-color);
+    color: red;
 }
 .inputcommon-group {
     margin-bottom: 12px;

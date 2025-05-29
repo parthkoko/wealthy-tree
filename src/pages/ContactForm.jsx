@@ -1,6 +1,9 @@
 import React from "react";
 
 function ContactForm() {
+
+
+  
   return (
     <div className="">
       <h2 className="text-3xl font-bold mb-2">Have any Questions?</h2>
@@ -11,7 +14,9 @@ function ContactForm() {
         <form className="space-y-4">
         {/* Name */}
         <div className="inputcommon-group">
-          <label className="input-lable" >Your Name </label>
+          <label className="input-lable" >Your Name
+            <span class="red-text">*</span>
+             </label>
           <input
             type="text"
             placeholder="Your Name"
@@ -21,7 +26,9 @@ function ContactForm() {
 
         {/* Email */}
         <div className="inputcommon-group">
-          <label className="input-lable">Your Email</label>
+          <label className="input-lable">Your Email
+            <span class="red-text">*</span>
+          </label>
           <input
             type="email"
             placeholder="Your Email"
@@ -32,7 +39,9 @@ function ContactForm() {
         {/* Subject & Phone (2 columns) */}
        <div className="grid grid-cols-2 gap-3  ">
           <div className="inputcommon-group">
-            <label className="input-lable">Subject</label>
+            <label className="input-lable">Subject
+              <span class="red-text">*</span>
+            </label>
             <input
               type="text"
               placeholder="Enter Subject"
@@ -40,7 +49,9 @@ function ContactForm() {
             />
           </div>
           <div className="inputcommon-group">
-            <label className="input-lable">Phone Number</label>
+            <label className="input-lable">Phone Number
+              <span class="red-text">*</span>
+            </label>
             <input
               type="tel"
               placeholder="Your Number"
@@ -51,7 +62,9 @@ function ContactForm() {
 
         {/* Message */}
         <div className="inputcommon-group">
-          <label className="input-lable">Message</label>
+          <label className="input-lable">Message
+            <span class="red-text">*</span>
+          </label>
           <textarea
             rows="5"
             placeholder="Enter Message..."
