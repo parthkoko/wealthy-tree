@@ -4,7 +4,7 @@ function ContactForm() {
   return (
     <div className="">
       <h2 className="text-3xl font-bold mb-2">Have any Questions?</h2>
-      <p className="text-gray-400 mb-6 text-sm">
+      <p className="text-gray-400 mb-6 text-[14px]">
         Lorem ipsum dolor sit amet, consecte lorem ipsumLorem ipsum dolor sit amet, consecte Lorem ipsum.
       </p>
     <div className="contactus-form">
@@ -30,13 +30,13 @@ function ContactForm() {
         </div>
 
         {/* Subject & Phone (2 columns) */}
-       
+       <div className="grid grid-cols-2 gap-3  ">
           <div className="inputcommon-group">
             <label className="input-lable">Subject</label>
             <input
               type="text"
               placeholder="Enter Subject"
-              className="input-field"
+              className="input-field "
             />
           </div>
           <div className="inputcommon-group">
@@ -44,10 +44,10 @@ function ContactForm() {
             <input
               type="tel"
               placeholder="Your Number"
-              className="input-field"
+              className="input-field "
             />
           </div>
-        
+        </div>
 
         {/* Message */}
         <div className="inputcommon-group">

@@ -613,7 +613,7 @@ margin-bottom: 20px;
     box-shadow: none;
     background-color: transparent;
     border: 1px solid #d2d2d2;
-    border-radius: 8px;
+    border-radius: 30px;
     width: 100%;
     outline: none;
 }
@@ -636,7 +636,23 @@ margin-bottom: 20px;
 .contact-form-main{
   width: 600px;
   background: white;
-  box-shadow: 0 0 20px #1E3C4F;
+  box-shadow: 0 0 20px #13191c30;
   border-radius: 20px;
   padding: 30px;
+}
+
+.contactform-block{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.contact-map{
+  width: 510px;
+  height: 510px;
+  border-radius: 0px 20px 20px 0px;
+  background: var(--green-color);
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
