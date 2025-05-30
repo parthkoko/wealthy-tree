@@ -46,7 +46,7 @@ function ContactForm() {
 
   if (submitted) {
     return (
-      <div className="p-6 text-center">
+      <div className="p-6 text-center h-screen flex flex-col items-center justify-center thank-you-message">
         <h2 className="text-3xl font-bold text-green-600 mb-2">Thank You!</h2>
         <p className="text-lg">Your message has been submitted successfully.</p>
       </div>

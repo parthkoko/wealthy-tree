@@ -639,6 +639,7 @@ margin-bottom: 20px;
   box-shadow: 0 0 20px #13191c30;
   border-radius: 20px;
   padding: 30px;
+  min-height: 602px;
 }
 
 .contactform-block{
@@ -660,4 +661,7 @@ margin-bottom: 20px;
     font-size: 12px;
     font-weight: 500;
     color: #f91f1fd9
+}
+.thank-you-message{
+  color: var(--light-green-color);
 }
