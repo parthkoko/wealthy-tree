@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import mainheaderlogo from "./assets/images/mainheaderlogo.svg";
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Header = () => {
 
@@ -32,8 +32,10 @@ const Header = () => {
                 <NavDropdown.Item href="/insuranceservices">Insurance Services</NavDropdown.Item>
                 <NavDropdown.Item href="/taxservices">Tax Services</NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="/news">News</Nav.Link>
-              <Nav.Link href="/blogs">Blogs</Nav.Link>
+              {/* <Nav.Link href="/news">News</Nav.Link>
+              <Nav.Link href="/blogs">Blogs</Nav.Link> */}
+              <Nav.Link as={Link} to="/news">News</Nav.Link>
+<Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
               <button className='green-button' onClick={handleClick}>
       Contact Us
     </button>
