@@ -7,6 +7,7 @@ import instagram from "../assets/images/instagram.svg";
 import maps from "../assets/images/maps.svg";
 import phoneicon from "../assets/images/phoneicon.svg";
 import mailicon from "../assets/images/mailicon.svg";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -42,10 +43,10 @@ const Footer = () => {
             </div>
             <div className="footer-manu">
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Blogs</a></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/about">About Us</Link></li>
+                <li><Link to="/news">News</Link></li>
+                <li><Link to="/blogs">Blogs</Link></li>
               </ul>
             </div>
           </div>

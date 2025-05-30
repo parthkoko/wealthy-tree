@@ -36,7 +36,7 @@ const Header = () => {
               <Nav.Link href="/blogs">Blogs</Nav.Link> */}
               <Nav.Link as={Link} to="/news">News</Nav.Link>
 <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
-              <button className='green-button' onClick={handleClick}>
+              <button className='green-button' >
       Contact Us
     </button>
             </Nav>
