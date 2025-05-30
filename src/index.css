@@ -656,3 +656,8 @@ margin-bottom: 20px;
   justify-content: center;
   align-items: center;
 }
+.inputcommon-group p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #f91f1fd9
+}
