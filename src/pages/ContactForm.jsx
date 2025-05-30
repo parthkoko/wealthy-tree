@@ -1,4 +1,11 @@
 import React, { useState } from "react";
+import emailjs from "emailjs-com";
+
+const SERVICE_ID = "service_abc123";
+const TEMPLATE_ID = "template_xyz789";
+const PUBLIC_KEY = "a1b2c3d4e5f6g7";
+
+
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -23,7 +30,6 @@ function ContactForm() {
     if (!formData.subject.trim()) newErrors.subject = "Subject is required";
     if (!formData.phone.trim()) newErrors.phone = "Phone is required";
     if (!formData.message.trim()) newErrors.message = "Message is required";
-
     return newErrors;
   };
 
@@ -41,7 +47,15 @@ function ContactForm() {
     }
 
     setErrors({});
-    setSubmitted(true); // Show thank you message
+
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, formData, PUBLIC_KEY)
+      .then(() => {
+        setSubmitted(true);
+      })
+      .catch((error) => {
+        console.error("Email send error:", error);
+        alert("Failed to send message. Please try again.");
+      });
   };
 
   if (submitted) {
@@ -57,15 +71,12 @@ function ContactForm() {
     <div>
       <h2 className="text-3xl font-bold mb-2">Have any Questions?</h2>
       <p className="text-gray-400 mb-6 text-[14px]">
-        Lorem ipsum dolor sit amet, consecte lorem ipsumLorem ipsum dolor sit amet, consecte Lorem ipsum.
+        Please fill out the form below and we will get back to you shortly.
       </p>
       <div className="contactus-form">
         <form className="space-y-4" onSubmit={handleSubmit}>
-          {/* Name */}
           <div className="inputcommon-group">
-            <label className="input-lable">
-              Your Name <span className="red-text">*</span>
-            </label>
+            <label className="input-lable">Your Name <span className="red-text">*</span></label>
             <input
               type="text"
               name="name"
@@ -74,14 +85,11 @@ function ContactForm() {
               value={formData.name}
               onChange={handleChange}
             />
-            {errors.name && <p className="text-red-500 text-[16px]">{errors.name}</p>}
+            {errors.name && <p className="text-red-500">{errors.name}</p>}
           </div>
 
-          {/* Email */}
           <div className="inputcommon-group">
-            <label className="input-lable">
-              Your Email <span className="red-text">*</span>
-            </label>
+            <label className="input-lable">Your Email <span className="red-text">*</span></label>
             <input
               type="email"
               name="email"
@@ -90,15 +98,12 @@ function ContactForm() {
               value={formData.email}
               onChange={handleChange}
             />
-            {errors.email && <p className="text-red-500 text-[16px]">{errors.email}</p>}
+            {errors.email && <p className="text-red-500">{errors.email}</p>}
           </div>
 
-          {/* Subject & Phone */}
           <div className="grid grid-cols-2 gap-3">
             <div className="inputcommon-group">
-              <label className="input-lable">
-                Subject <span className="red-text">*</span>
-              </label>
+              <label className="input-lable">Subject <span className="red-text">*</span></label>
               <input
                 type="text"
                 name="subject"
@@ -107,12 +112,10 @@ function ContactForm() {
                 value={formData.subject}
                 onChange={handleChange}
               />
-              {errors.subject && <p className="text-red-500 text-[16px]">{errors.subject}</p>}
+              {errors.subject && <p className="text-red-500">{errors.subject}</p>}
             </div>
             <div className="inputcommon-group">
-              <label className="input-lable">
-                Phone Number <span className="red-text">*</span>
-              </label>
+              <label className="input-lable">Phone Number <span className="red-text">*</span></label>
               <input
                 type="tel"
                 name="phone"
@@ -122,15 +125,12 @@ function ContactForm() {
                 value={formData.phone}
                 onChange={handleChange}
               />
-              {errors.phone && <p className="text-red-500 text-[16px]">{errors.phone}</p>}
+              {errors.phone && <p className="text-red-500">{errors.phone}</p>}
             </div>
           </div>
 
-          {/* Message */}
           <div className="inputcommon-group">
-            <label className="input-lable">
-              Message <span className="red-text">*</span>
-            </label>
+            <label className="input-lable">Message <span className="red-text">*</span></label>
             <textarea
               name="message"
               rows="5"
@@ -139,13 +139,10 @@ function ContactForm() {
               value={formData.message}
               onChange={handleChange}
             />
-            {errors.message && <p className="text-red-500 text-[16px]">{errors.message}</p>}
+            {errors.message && <p className="text-red-500">{errors.message}</p>}
           </div>
 
-          {/* Submit Button */}
-          <button type="submit" className="green-button">
-            Submit
-          </button>
+          <button type="submit" className="green-button">Submit</button>
         </form>
       </div>
     </div>
