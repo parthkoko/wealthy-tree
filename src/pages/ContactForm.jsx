@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 
-const SERVICE_ID = "service_abc123";
-const TEMPLATE_ID = "template_xyz789";
-const PUBLIC_KEY = "a1b2c3d4e5f6g7";
-
-
+const SERVICE_ID = "service_b2cr3cl";
+const TEMPLATE_ID = "template_u8asuk4";
+const PUBLIC_KEY = "ivbZkXCB3nCoTxsO5";
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -18,6 +16,7 @@ function ContactForm() {
 
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const validate = () => {
     const newErrors = {};
@@ -47,14 +46,17 @@ function ContactForm() {
     }
 
     setErrors({});
+    setLoading(true);
 
     emailjs.send(SERVICE_ID, TEMPLATE_ID, formData, PUBLIC_KEY)
       .then(() => {
         setSubmitted(true);
+        setLoading(false);
       })
       .catch((error) => {
         console.error("Email send error:", error);
-        alert("Failed to send message. Please try again.");
+        alert("Failed to send message. Please try again later.");
+        setLoading(false);
       });
   };
 
@@ -84,6 +86,7 @@ function ContactForm() {
               className="input-field"
               value={formData.name}
               onChange={handleChange}
+              disabled={loading}
             />
             {errors.name && <p className="text-red-500">{errors.name}</p>}
           </div>
@@ -97,6 +100,7 @@ function ContactForm() {
               className="input-field"
               value={formData.email}
               onChange={handleChange}
+              disabled={loading}
             />
             {errors.email && <p className="text-red-500">{errors.email}</p>}
           </div>
@@ -111,6 +115,7 @@ function ContactForm() {
                 className="input-field"
                 value={formData.subject}
                 onChange={handleChange}
+                disabled={loading}
               />
               {errors.subject && <p className="text-red-500">{errors.subject}</p>}
             </div>
@@ -124,6 +129,7 @@ function ContactForm() {
                 className="input-field"
                 value={formData.phone}
                 onChange={handleChange}
+                disabled={loading}
               />
               {errors.phone && <p className="text-red-500">{errors.phone}</p>}
             </div>
@@ -138,11 +144,14 @@ function ContactForm() {
               className="input-field"
               value={formData.message}
               onChange={handleChange}
+              disabled={loading}
             />
             {errors.message && <p className="text-red-500">{errors.message}</p>}
           </div>
 
-          <button type="submit" className="green-button">Submit</button>
+          <button type="submit" className="green-button" disabled={loading}>
+            {loading ? "Sending..." : "Submit"}
+          </button>
         </form>
       </div>
     </div>
