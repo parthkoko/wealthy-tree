@@ -34,17 +34,11 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css/pagination';
 import Header from '../header';
 import Footer from './footer';
-import { useNavigate } from 'react-router-dom';
 
 
 const Home = () => {
 
-   const navigate = useNavigate();
-
-  const handleClick = () => {
-    navigate('/contactus');
-  };
-
+  
   return (
     <div className=" main-homepage">
       {/* <div className='main-header'>
@@ -83,7 +77,7 @@ const Home = () => {
 <div className="homebanner-detail">
   <h2>Lorem ipsum</h2>
   <p>Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-  <button className='white-button'onClick={handleClick} >Contact Us</button>
+  <button className='white-button'>Contact Us</button>
 </div>
 </Container>
     </div>
