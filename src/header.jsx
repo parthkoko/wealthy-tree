@@ -25,12 +25,12 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto flex main-navbar-data">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/about">About us</Nav.Link>
+              <Nav.Link as={Link} to="/">Home</Nav.Link>
+<Nav.Link as={Link} to="/about">About Us</Nav.Link>
               <NavDropdown title="Services" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/investmentservices">Investment Services</NavDropdown.Item>
-                <NavDropdown.Item href="/insuranceservices">Insurance Services</NavDropdown.Item>
-                <NavDropdown.Item href="/taxservices">Tax Services</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/investmentservices">Investment Services</NavDropdown.Item>
+<NavDropdown.Item as={Link} to="/insuranceservices">Insurance Services</NavDropdown.Item>
+<NavDropdown.Item as={Link} to="/taxservices">Tax Services</NavDropdown.Item>
               </NavDropdown>
               {/* <Nav.Link href="/news">News</Nav.Link>
               <Nav.Link href="/blogs">Blogs</Nav.Link> */}
