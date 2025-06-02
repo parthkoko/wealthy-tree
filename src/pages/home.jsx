@@ -391,6 +391,29 @@ nibh euismod  laoree.”</p>
         disableOnInteraction: false,
       }}
         pagination={{ clickable: true }}
+          breakpoints={{
+    0: {
+      slidesPerView: 1,
+    },
+    480: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+    1600: {
+      slidesPerView: 3.4,
+    },
+    1680: {
+      slidesPerView: 3.5,
+    },
+    1792: {
+      slidesPerView: 3.8,
+    },
+  }}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
