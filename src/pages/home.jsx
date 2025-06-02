@@ -129,7 +129,7 @@ const Home = () => {
       <img className='invest-grey-round' src={investmeanticon} alt="investmeanticon" />
       <h3>Investment Services</h3>
       <p>Lorem ipsum dolor sit amet, consecte Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod laoree.</p>
-      <button className='flex gap-1 items-center'><span>Read More</span> <span><img src={righttoparrow} alt="righttoparrow" /></span></button>
+      <button className='flex gap-2 items-center'><span>Read More</span> <span><img src={righttoparrow} alt="righttoparrow" /></span></button>
     </div>
   </div>
   <div className="ourservice-inner-card-data">
@@ -138,7 +138,7 @@ const Home = () => {
       <img className='invest-grey-round' src={investmeanticon} alt="investmeanticon" />
       <h3>Investment Services</h3>
       <p>Lorem ipsum dolor sit amet, consecte Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod laoree.</p>
-      <button className='flex gap-1 items-center'><span>Read More</span> <span><img src={righttoparrow} alt="righttoparrow" /></span></button>
+      <button className='flex gap-2 items-center'><span>Read More</span> <span><img src={righttoparrow} alt="righttoparrow" /></span></button>
     </div>
   </div>
   <div className="ourservice-inner-card-data">
@@ -147,7 +147,7 @@ const Home = () => {
       <img className='invest-grey-round' src={investmeanticon} alt="investmeanticon" />
       <h3>Investment Services</h3>
       <p>Lorem ipsum dolor sit amet, consecte Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod laoree.</p>
-      <button className='flex gap-1 items-center'><span>Read More</span> <span><img src={righttoparrow} alt="righttoparrow" /></span></button>
+      <button className='flex gap-2 items-center'><span>Read More</span> <span><img src={righttoparrow} alt="righttoparrow" /></span></button>
     </div>
   </div>
 </div>
@@ -165,7 +165,7 @@ const Home = () => {
                <Swiper
                modules={[Autoplay, Pagination]}
       spaceBetween={50}
-      slidesPerView={2}
+      slidesPerView={3}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
          autoplay={{
@@ -305,7 +305,7 @@ nibh euismod  laoree.”</p>
     backgroundImage: `url(${blogbg})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    height: '670px',
+    height: '800px',
     width: '100%',
   }}
 
@@ -383,7 +383,7 @@ nibh euismod  laoree.”</p>
               <Swiper
               modules={[Autoplay, Pagination]}
       spaceBetween={50}
-      slidesPerView={3}
+      slidesPerView={4}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
          autoplay={{

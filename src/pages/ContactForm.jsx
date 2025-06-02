@@ -141,7 +141,7 @@ function ContactForm() {
               name="message"
               rows="5"
               placeholder="Enter Message..."
-              className="input-field"
+              className="input-textarea"
               value={formData.message}
               onChange={handleChange}
               disabled={loading}

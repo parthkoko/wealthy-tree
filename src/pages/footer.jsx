@@ -70,7 +70,7 @@ const Footer = () => {
             <div className="footer-manu">
               <ul>
                 <li><a href="#"><span><img src={maps} alt="maps" /></span>2715 Ash Dr. San Jose, South <br /> Dakota 83475</a></li>
-                <li className="flex items-center gap-2">
+                <li className="flex items-center gap-4">
                 <span>
                 <img src={phoneicon} alt="phoneicon" />
                 </span>

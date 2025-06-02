@@ -18,11 +18,14 @@ const Header = () => {
   return (
     <div className='main-header'>
       <Navbar expand="lg">
-        <Container>
-          <Navbar.Brand href="#home">
+        <div className="wealthy-container ">
+          <div className="main-header-details flex items-center justify-between">
+          <div className="logo-header">
+            <Navbar.Brand href="#home">
             <img src={mainheaderlogo} alt="mainheaderlogo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          </div>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto flex main-navbar-data">
               <Nav.Link as={Link} to="/">Home</Nav.Link>
@@ -41,7 +44,8 @@ const Header = () => {
     </button>
             </Nav>
           </Navbar.Collapse>
-        </Container>
+        </div>
+        </div>
       </Navbar>
     </div>
   );
