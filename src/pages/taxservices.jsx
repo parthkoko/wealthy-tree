@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Header from '../header';
 import Footer from './footer';
@@ -9,6 +9,10 @@ import investmeanticon from "../assets/images/investmeanticon.svg";
 import righttoparrow from "../assets/images/righttoparrow.svg";
 
 const TaxServices = () => {
+
+   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
     

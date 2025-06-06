@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Button } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -51,6 +51,10 @@ import { useNavigate } from 'react-router-dom';
 
 
 const Home = () => {
+  
+   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
     const navigate = useNavigate();
 

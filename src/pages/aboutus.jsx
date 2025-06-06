@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Header from '../header';
 import Footer from './footer';
@@ -10,6 +10,9 @@ import ourmission from "../assets/images/ourmission.svg";
 import ourvision from "../assets/images/ourvision.svg";
 
 const Aboutus = () => {
+   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
     

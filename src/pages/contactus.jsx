@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Header from '../header';
 import Footer from './footer';
@@ -8,7 +8,9 @@ import ContactForm from './ContactForm';
 
 const ContactUs = () => {
 
-    
+     useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
     

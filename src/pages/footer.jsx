@@ -57,9 +57,9 @@ const Footer = () => {
             </div>
             <div className="footer-manu">
               <ul>
-                <li><a href="/investmentservices">Investment Services</a></li>
-                <li><a href="/insuranceservices">Insurance Services</a></li>
-                <li><a href="/taxservices">Tax Services</a></li>
+                <li><Link to="/investmentservices">Investment Services</Link></li>
+                <li><Link to="/insuranceservices">Insurance Services</Link></li>
+                <li><Link to="/taxservices">Tax Services</Link></li>
                 
               </ul>
             </div>
