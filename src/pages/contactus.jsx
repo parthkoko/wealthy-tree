@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap';
 import Header from '../header';
 import Footer from './footer';
 import bgabout from "../assets/images/bgabout.png";
+import contactbg from "../assets/images/contactbg.png";
 import ContactForm from './ContactForm';
 
 const ContactUs = () => {
@@ -14,15 +15,15 @@ const ContactUs = () => {
       {/* <Header /> */}
       <div className="about-banner-section py-16 text-center  bg-gray-100"
                style={{
-                backgroundImage: `url(${bgabout})`,
+                backgroundImage: `url(${contactbg})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
-                height: '400px',
+                height: '600px',
                 width: '100%',
               }}
               >
-              <h1 className="text-4xl font-bold">Contact Us</h1>
-              <p className="text-lg mt-4 text-gray-600">
+              <h1 className="text-[70px] font-bold text-[#fff]">Contact Us</h1>
+              <p className="text-[26px] mt-4 text-[#fff]">
                 Home / Contact us
               </p>
             </div>

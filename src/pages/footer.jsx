@@ -47,6 +47,7 @@ const Footer = () => {
                 <li><Link to="/about">About Us</Link></li>
                 <li><Link to="/news">News</Link></li>
                 <li><Link to="/blogs">Blogs</Link></li>
+                <li><Link to="/contactus">Contact Us</Link></li>
               </ul>
             </div>
           </div>
@@ -56,9 +57,9 @@ const Footer = () => {
             </div>
             <div className="footer-manu">
               <ul>
-                <li><a href="#">Mutual fund research</a></li>
-                <li><a href="#">Mutual fund research</a></li>
-                <li><a href="#">Mutual fund research</a></li>
+                <li><a href="/investmentservices">Investment Services</a></li>
+                <li><a href="/insuranceservices">Insurance Services</a></li>
+                <li><a href="/taxservices">Tax Services</a></li>
                 
               </ul>
             </div>

@@ -27,6 +27,19 @@ import instagram from "../assets/images/instagram.svg";
 import maps from "../assets/images/maps.svg";
 import phoneicon from "../assets/images/phoneicon.svg";
 import mailicon from "../assets/images/mailicon.svg";
+import tex from "../assets/images/tex.svg";
+import insurance from "../assets/images/insurance.svg";
+import welcomeone from "../assets/images/welcomeone.png";
+import welcometwo from "../assets/images/welcometwo.png";
+import welcomethree from "../assets/images/welcomethree.png";
+import servicesone from "../assets/images/servicesone.png";
+import servicestwo from "../assets/images/servicestwo.png";
+import servicesthree from "../assets/images/servicesthree.png";
+import blogfour from "../assets/images/blogfour.png";
+import blogthree from "../assets/images/blogthree.png";
+import blogtwo from "../assets/images/blogtwo.png";
+import blogone from "../assets/images/blogone.png";
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 // import { Autoplay } from 'swiper/modules';
@@ -34,11 +47,14 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css/pagination';
 import Header from '../header';
 import Footer from './footer';
+import { useNavigate } from 'react-router-dom';
 
 
 const Home = () => {
 
-  
+    const navigate = useNavigate();
+
+
   return (
     <div className=" main-homepage">
       {/* <div className='main-header'>
@@ -72,12 +88,12 @@ const Home = () => {
     {/* <Header /> */}
     
     <div className='main-home-banner relative w-full'>
-<img className='w-full' src={homebanner} alt="homebanner" />
+<img className='w-full ' src={homebanner} alt="homebanner"  />
 <Container>
 <div className="homebanner-detail">
-  <h2>Lorem ipsum</h2>
-  <p>Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-  <button className='white-button'>Contact Us</button>
+  <h2> <span>Grow Wealth.</span>Fulfill Your Dreams.</h2>
+  <p>From Smart Investments to Secure Insurance and Trusted Tax Solutions - WEALTHY TREE is your All-in-one Financial Growth Partner.</p>
+  <button onClick={() => navigate('/contactus')} className='white-button'> Start Your Wealth Creation Journey</button>
 </div>
 </Container>
     </div>
@@ -93,21 +109,27 @@ const Home = () => {
         <div className="welcomeimages-grid"></div>
         <div className="welcomeimages-grid"></div> */}
             <div className="welcomeimages-grid">
-      <div className="box box1 welcomeimages-grid-inner"></div>
-      <div className="box box2 welcomeimages-grid-inner"></div>
+      <div className="box box1 welcomeimages-grid-inner">
+        <img src={welcomeone} alt="welcomeone" />
+      </div>
+      <div className="box box2 welcomeimages-grid-inner">
+        <img src={welcometwo} alt="welcometwo" />
+      </div>
       <div className="box box3 welcomeimages-grid-inner">
         <div className="welcomeimages-grid-inner-text">
           <strong>5+</strong>
           <span>years of<br />experiences</span>
         </div>
       </div>
-      <div className="box box4 welcomeimages-grid-inner"></div>
+      <div className="box box4 welcomeimages-grid-inner">
+        <img src={welcomethree} alt="welcomethree" />
+      </div>
     </div>
       </div>
       <div className="welcome-detail">
-        <h2>Welcome To Wealthy Tree</h2>
-        <p>Lorem ipsum dolor sit amet, consecteLorem ipsum dolor sit amet, consecte Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod laoree. Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod laoree.Lorem ipsum dolor sit amet, consecte Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod laoree.Lorem ipsum dolor sit amet, consecte Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod.</p>
-        <button className='green-button'>Contact Us</button>
+        <h2>Welcome to <span>WEALTHY TREE</span></h2>
+        <p>At <b>WEALTHY TREE</b>, we believe that financial empowerment goes beyond products and transactions - it's about building long-term partnerships and providing a solid foundation for future generations. Founded with the vision to simplify the financial journey for every person, we offer a comprehensive suite of services including investment solutions, insurance coverage, and tax advisory under one roof.</p>
+        <button className='green-button'>Learn more</button>
       </div>
       </div>
       </div>
@@ -124,30 +146,30 @@ const Home = () => {
 </div>
 <div className="ourservice-inner-card">
   <div className="ourservice-inner-card-data">
-    <img src={investsevice} alt="investsevice" />
+    <img src={servicesone} alt="servicesone" />
     <div className="serviceinner-card-details">
       <img className='invest-grey-round' src={investmeanticon} alt="investmeanticon" />
       <h3>Investment Services</h3>
-      <p>Lorem ipsum dolor sit amet, consecte Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod laoree.</p>
-      <button className='flex gap-2 items-center'><span>Read More</span> <span><img src={righttoparrow} alt="righttoparrow" /></span></button>
+      <p> Grow your Wealth through mix & match of different financial products specially curated for you based on your Risk Profile & Unlock Financial Freedom at every stage of life.</p>
+      <button   onClick={() => navigate('/InvestmentServices')} className='flex gap-2 items-center'><span>Read More</span> <span><img src={righttoparrow} alt="righttoparrow" /></span></button>
     </div>
   </div>
   <div className="ourservice-inner-card-data">
-    <img src={investsevice} alt="investsevice" />
+    <img src={servicestwo} alt="servicestwo" />
     <div className="serviceinner-card-details">
-      <img className='invest-grey-round' src={investmeanticon} alt="investmeanticon" />
-      <h3>Investment Services</h3>
-      <p>Lorem ipsum dolor sit amet, consecte Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod laoree.</p>
-      <button className='flex gap-2 items-center'><span>Read More</span> <span><img src={righttoparrow} alt="righttoparrow" /></span></button>
+      <img className='invest-grey-round' src={insurance} alt="insurance" />
+      <h3>Insurance Services</h3>
+      <p>Protect what matters with Life, Health, and General Insurance plans - customized to secure uncertainities of life and future goals.</p>
+      <button onClick={() => navigate('/insuranceservices')} className='flex gap-2 items-center'><span>Read More</span> <span><img src={righttoparrow} alt="righttoparrow" /></span></button>
     </div>
   </div>
   <div className="ourservice-inner-card-data">
-    <img src={investsevice} alt="investsevice" />
+    <img src={servicesthree} alt="servicesthree" />
     <div className="serviceinner-card-details">
-      <img className='invest-grey-round' src={investmeanticon} alt="investmeanticon" />
-      <h3>Investment Services</h3>
-      <p>Lorem ipsum dolor sit amet, consecte Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod laoree.</p>
-      <button className='flex gap-2 items-center'><span>Read More</span> <span><img src={righttoparrow} alt="righttoparrow" /></span></button>
+      <img className='invest-grey-round' src={tex} alt="tex" />
+      <h3>Tax Services</h3>
+      <p>Simplify your Tax Filings & all Compliances related to Income Tax, GST, Audit & ROC - all under one roof.</p>
+      <button onClick={() => navigate('/taxservices')}  className='flex gap-2 items-center'><span>Read More</span> <span><img src={righttoparrow} alt="righttoparrow" /></span></button>
     </div>
   </div>
 </div>
@@ -159,7 +181,7 @@ const Home = () => {
       <div className="">
         <div className="client-sucess-main">
           <div className="client-sucess-title">
-            <h2>Client Success Stories</h2>
+            <h2>Our Client Stories</h2>
           </div>
           <div className="client-sucess-swiper">
                <Swiper
@@ -191,17 +213,13 @@ const Home = () => {
             </div>
           </div>
           <div className="details-story">
-            <p>“Lorem ipsum dolor sit amet, consecteLorem ipsum dolor sit amet, consecte
-Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy
-nibh euismod  laoree. Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod  laoree.Lorem ipsum dolor sit amet, consecte Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod  laoree.Lorem ipsum dolor sit amet, consecte
-Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy
-nibh euismod  laoree.”</p>
+            <p>“Shaunakbhai, helped me to recover a forgotten portfolio of my father which also doesn’t have a nomination.I had no idea about that unclaimed investments - now it’s working for me again!”</p>
           </div>
           <div className="profile-client flex items-center gap-3">
             <div className="profile-icon"><img src={profileclient} alt="profileclient" /></div>
             <div className="profile-detail">
-              <h4>Savannah Nguyen</h4>
-              <p>Lorem ipsum</p>
+              <h4>Harshad Pandya</h4>
+              {/* <p>Lorem ipsum</p> */}
             </div>
           </div>
         </div>
@@ -221,17 +239,13 @@ nibh euismod  laoree.”</p>
             </div>
           </div>
           <div className="details-story">
-            <p>“Lorem ipsum dolor sit amet, consecteLorem ipsum dolor sit amet, consecte
-Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy
-nibh euismod  laoree. Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod  laoree.Lorem ipsum dolor sit amet, consecte Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod  laoree.Lorem ipsum dolor sit amet, consecte
-Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy
-nibh euismod  laoree.”</p>
+            <p>“Their retirement planning is spot-on. I now have clarity and confidence in my future.”</p>
           </div>
           <div className="profile-client flex items-center gap-3">
             <div className="profile-icon"><img src={profileclient} alt="profileclient" /></div>
             <div className="profile-detail">
-              <h4>Savannah Nguyen</h4>
-              <p>Lorem ipsum</p>
+              <h4>Kshitij Patel</h4>
+              {/* <p>Lorem ipsum</p> */}
             </div>
           </div>
         </div>
@@ -251,17 +265,13 @@ nibh euismod  laoree.”</p>
             </div>
           </div>
           <div className="details-story">
-            <p>“Lorem ipsum dolor sit amet, consecteLorem ipsum dolor sit amet, consecte
-Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy
-nibh euismod  laoree. Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod  laoree.Lorem ipsum dolor sit amet, consecte Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod  laoree.Lorem ipsum dolor sit amet, consecte
-Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy
-nibh euismod  laoree.”</p>
+            <p>“The team provided me with a personalized mutual fund strategy & tax planning for my ITR filings that really worked. Great support and insights.”</p>
           </div>
           <div className="profile-client flex items-center gap-3">
             <div className="profile-icon"><img src={profileclient} alt="profileclient" /></div>
             <div className="profile-detail">
-              <h4>Savannah Nguyen</h4>
-              <p>Lorem ipsum</p>
+              <h4>Saumil Vyas</h4>
+              {/* <p>Lorem ipsum</p> */}
             </div>
           </div>
         </div>
@@ -280,17 +290,37 @@ nibh euismod  laoree.”</p>
             </div>
           </div>
           <div className="details-story">
-            <p>“Lorem ipsum dolor sit amet, consecteLorem ipsum dolor sit amet, consecte
-Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy
-nibh euismod  laoree. Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod  laoree.Lorem ipsum dolor sit amet, consecte Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod  laoree.Lorem ipsum dolor sit amet, consecte
-Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy
-nibh euismod  laoree.”</p>
+            <p>“Thanks to WEALTHY TREE, I finally got my will and estate planning done. It feels good to be prepared.”</p>
           </div>
           <div className="profile-client flex items-center gap-3">
             <div className="profile-icon"><img src={profileclient} alt="profileclient" /></div>
             <div className="profile-detail">
-              <h4>Savannah Nguyen</h4>
-              <p>Lorem ipsum</p>
+              <h4>D P Thakkar</h4>
+              {/* <p>Lorem ipsum</p> */}
+            </div>
+          </div>
+        </div></SwiperSlide>
+      <SwiperSlide><div className="success-story">
+          <div className="rating-section flex justify-between items-center">
+            <div className='flex items-center gap-1'>
+              <img src={Star} alt="Star" />
+              <img src={Star} alt="Star" />
+              <img src={Star} alt="Star" />
+              <img src={Star} alt="Star" />
+              <img src={Star} alt="Star" />
+            </div>
+            <div>
+               <img src={comaicon} alt="comaicon" />
+            </div>
+          </div>
+          <div className="details-story">
+            <p>“One-stop solution for all my financial needs & for my company tax filings. Highly professional and reliable.”</p>
+          </div>
+          <div className="profile-client flex items-center gap-3">
+            <div className="profile-icon"><img src={profileclient} alt="profileclient" /></div>
+            <div className="profile-detail">
+              <h4> R K Agrawal</h4>
+              {/* <p>Lorem ipsum</p> */}
             </div>
           </div>
         </div></SwiperSlide>
@@ -305,7 +335,7 @@ nibh euismod  laoree.”</p>
     backgroundImage: `url(${blogbg})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    height: '800px',
+    height: '680px',
     width: '100%',
   }}
 
@@ -318,7 +348,7 @@ nibh euismod  laoree.”</p>
 </div> 
 <div className="blog-card">
   <div className="blog-card-inner">
-    <img src={investsevice} alt="investsevice" />
+    <img src={blogone} alt="blogone" />
     <div className="blog-detail-card ">
 <div className="profileanddata">
   <div className="profile-blog">
@@ -330,13 +360,13 @@ nibh euismod  laoree.”</p>
     <h3>comment</h3>
   </div>
 </div>
-<h4>Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed.</h4>
-<p>Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed.Lorem ipsum.Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed.Lorem ipsum.</p>
-       <button className='green-button'>Contact Us</button>
+<h4>Top 5 Mistakes New Investors Make</h4>
+<p>Avoid common pitfalls and start your financial journey on the right track.</p>
+       {/* <button className='green-button'>Contact Us</button> */}
     </div>
   </div>
   <div className="blog-card-inner">
-    <img src={investsevice} alt="investsevice" />
+    <img src={blogtwo} alt="blogtwo" />
     <div className="blog-detail-card ">
 <div className="profileanddata">
   <div className="profile-blog">
@@ -348,13 +378,13 @@ nibh euismod  laoree.”</p>
     <h3>comment</h3>
   </div>
 </div>
-<h4>Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed.</h4>
-<p>Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed.Lorem ipsum.Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed.Lorem ipsum.</p>
-       <button className='green-button'>Contact Us</button>
+<h4>Why Goal-Based Planning Beats Traditional Saving</h4>
+<p> Discover how purpose-driven investing can help you reach milestones faster.</p>
+       {/* <button className='green-button'>Contact Us</button> */}
     </div>
   </div>
   <div className="blog-card-inner">
-    <img src={investsevice} alt="investsevice" />
+    <img src={blogthree} alt="blogthree" />
     <div className="blog-detail-card ">
 <div className="profileanddata">
   <div className="profile-blog">
@@ -366,9 +396,27 @@ nibh euismod  laoree.”</p>
     <h3>comment</h3>
   </div>
 </div>
-<h4>Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed.</h4>
-<p>Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed.Lorem ipsum.Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed.Lorem ipsum.</p>
-       <button className='green-button'>Contact Us</button>
+<h4>Uncovering the Truth About “Unclaimed” Investments</h4>
+<p>You might have hidden wealth you’re not even aware of - here’s how to find it.</p>
+       {/* <button className='green-button'>Contact Us</button> */}
+    </div>
+  </div>
+  <div className="blog-card-inner">
+    <img src={blogfour} alt="blogfour" />
+    <div className="blog-detail-card ">
+<div className="profileanddata">
+  <div className="profile-blog">
+    <img src={maleicon} alt="male-icon" />
+    <h3>By : Admin</h3>
+  </div>
+  <div className="profile-blog">
+    <img src={speechicon} alt="speechicon" />
+    <h3>comment</h3>
+  </div>
+</div>
+<h4>Why Asset Allocation is necessary</h4>
+<p>Diversifying across multiple asset classes can balance risk and returns better</p>
+       {/* <button className='green-button'>Contact Us</button> */}
     </div>
   </div>
 </div>

@@ -5,6 +5,9 @@ import Footer from './footer';
 import bgabout from "../assets/images/bgabout.png";
 import welcometrerone from "../assets/images/welcometrerone.png";
 import weltreetwo from "../assets/images/weltreetwo.png";
+import aboutbg from "../assets/images/aboutbg.png";
+import ourmission from "../assets/images/ourmission.svg";
+import ourvision from "../assets/images/ourvision.svg";
 
 const Aboutus = () => {
   return (
@@ -13,16 +16,16 @@ const Aboutus = () => {
       {/* <Header /> */}
       <div className="about-banner-section py-16 text-center  bg-gray-100"
          style={{
-          backgroundImage: `url(${bgabout})`,
+          backgroundImage: `url(${aboutbg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          height: '400px',
+          height: '600px',
           width: '100%',
         }}
         >
-        <h1 className="text-4xl font-bold">About Us</h1>
-        <p className="text-lg mt-4 text-gray-600">
-          Home / About Us
+        <h1 className="text-[70px] font-bold text-[#fff]">About WEALTHY TREE</h1>
+        <p className="text-[26px] mt-4 text-[#fff]">
+          Nurturing Wealth. Fulfilling Dreams.
         </p>
       </div>
       <div className="welcometree-section">
@@ -35,12 +38,11 @@ const Aboutus = () => {
               <p>5+<span>Experiences</span></p>
             </div>
           </div>
-          <div className="treeblock-details">
-            <div className="treeblock-title-common">
-              <h2>Welcome To Wealthy Tree</h2>
-              <p>Lorem ipsum dolor sit amet, consecteLorem ipsum dolor sit amet, consecte Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod laoree. Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod laoree.Lorem ipsum dolor sit amet, consecte Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod laoree.Lorem ipsum dolor sit amet, consecte Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod.</p>
-              <p>Lorem ipsum dolor sit amet, consecteLorem ipsum dolor sit amet, consecte
-Lorem ipsum dolor sit amet,  </p>
+          <div className="treeblock-details-about">
+            <div className="treeblock-title-common-about">
+              <h2>About WEALTHY TREE</h2>
+              <p>WEALTHY TREE was founded with a mission to simplify financial management for individuals, families, and businesses. Our team brings decades of combined expertise in wealth management, insurance solutions, and taxation compliance. </p>
+              <p>We don’t just manage wealth - we nurture it. Every solution we offer is designed around your life goals, values and to grow your business with smoother tax compliances. With a transparent, client-first approach, our goal is to deliver peace of mind, clarity, and long-term results. At WEALTHY TREE, your ambitions are the seeds - and we help them nurture & grow.  </p>
             </div>
             <p></p>
           </div>
@@ -53,36 +55,38 @@ Lorem ipsum dolor sit amet,  </p>
       <div className="ourmission-block">
         <div className="treeblock-details">
             <div className="treeblock-title-common">
+              <img src={ourmission} alt="ourmission" />
               <h2>Our Mission</h2>
-              <p>Lorem ipsum dolor sit amet, consecteLorem ipsum dolor sit amet, consecte Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod laoree. Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod laoree.Lorem ipsum dolor sit amet, consecte Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod laoree.Lorem ipsum dolor sit amet, consecte Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod.</p>
+              <p>To empower individuals with tailored financial solutions that help them grow, protect, and preserve their wealth through all phases of life. To empower Individual’s Businesses with growth & smoother compliances.</p>
              
             </div>
-            <p></p>
           </div>
-          <div className="treeblock-images">
-            <img className='relative' src={welcometrerone} alt="welcometrerone" />
+        <div className="treeblock-details">
+            <div className="treeblock-title-common">
+              <img src={ourvision} alt="ourvision" />
+                 <h2>Our Vision</h2>
+              <p>To be the most trusted financial partner for every Indian/NRI - rooted in integrity, driven by results, and committed to legacy-building.</p>
+             
+            </div>
           </div>
+         
           
         </div>
     </div>
    </div>
-<div className="ourvision-section">
+{/* <div className="ourvision-section">
   <div className="wealthy-container">
       <div className="ourvision-block">
           <div className="treeblock-images">
             <img className='relative' src={welcometrerone} alt="welcometrerone" />
           </div>
           <div className="treeblock-details">
-            <div className="treeblock-title-common">
-              <h2>Our Vision</h2>
-              <p>Lorem ipsum dolor sit amet, consecteLorem ipsum dolor sit amet, consecte Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod laoree. Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod laoree.Lorem ipsum dolor sit amet, consecte Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod laoree.Lorem ipsum dolor sit amet, consecte Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod.</p>
-             
-            </div>
+           
             <p></p>
           </div>
         </div>
     </div>
-</div>
+</div> */}
       <Footer />
     </>
   );
