@@ -51,7 +51,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 const Home = () => {
-  
+
    useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -95,7 +95,7 @@ const Home = () => {
 <img className='w-full ' src={homebanner} alt="homebanner"  />
 <Container>
 <div className="homebanner-detail">
-  <h2> <span>Grow Wealth.</span>Fulfill Your Dreams.</h2>
+  <h2> Grow Wealth. <span>Fulfill Your Dreams.</span></h2>
   <p>From Smart Investments to Secure Insurance and Trusted Tax Solutions - WEALTHY TREE is your All-in-one Financial Growth Partner.</p>
   <button onClick={() => navigate('/contactus')} className='white-button'> Start Your Wealth Creation Journey</button>
 </div>
@@ -146,7 +146,7 @@ const Home = () => {
           </div>
         <div className="ourservice-inner-data">
 <div className="ourservice-title">
-  <h2>Our Services</h2>
+  <h2>Our <span>Services</span></h2>
 </div>
 <div className="ourservice-inner-card">
   <div className="ourservice-inner-card-data">
@@ -185,7 +185,7 @@ const Home = () => {
       <div className="">
         <div className="client-sucess-main">
           <div className="client-sucess-title">
-            <h2>Our Client Stories</h2>
+            <h2>Our <span> Client Stories</span></h2>
           </div>
           <div className="client-sucess-swiper">
                <Swiper

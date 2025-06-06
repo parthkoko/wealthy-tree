@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import mainheaderlogo from "./assets/images/mainheaderlogo.svg";
-import { Link, useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';  // use NavLink here!
 
 const Header = () => {
 
@@ -14,6 +14,9 @@ const Header = () => {
   const handleClick = () => {
     navigate('/contactus');
   };
+
+  // You can define a function to add active styling:
+  const getNavLinkClass = ({ isActive }) => (isActive ? 'nav-link active' : 'nav-link');
 
   return (
     <div className='main-header'>
@@ -28,20 +31,18 @@ const Header = () => {
           </div>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto flex main-navbar-data">
-              <Nav.Link as={Link} to="/">Home</Nav.Link>
-<Nav.Link as={Link} to="/about">About Us</Nav.Link>
+              <Nav.Link as={NavLink} to="/" className={getNavLinkClass}>Home</Nav.Link>
+              <Nav.Link as={NavLink} to="/about" className={getNavLinkClass}>About Us</Nav.Link>
               <NavDropdown title="Services" id="basic-nav-dropdown">
-                <NavDropdown.Item as={Link} to="/investmentservices">Investment Services</NavDropdown.Item>
-<NavDropdown.Item as={Link} to="/insuranceservices">Insurance Services</NavDropdown.Item>
-<NavDropdown.Item as={Link} to="/taxservices">Tax Services</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/investmentservices" className={getNavLinkClass}>Investment Services</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/insuranceservices" className={getNavLinkClass}>Insurance Services</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/taxservices" className={getNavLinkClass}>Tax Services</NavDropdown.Item>
               </NavDropdown>
-              {/* <Nav.Link href="/news">News</Nav.Link>
-              <Nav.Link href="/blogs">Blogs</Nav.Link> */}
-              <Nav.Link as={Link} to="/news">News</Nav.Link>
-<Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
+              <Nav.Link as={NavLink} to="/news" className={getNavLinkClass}>News</Nav.Link>
+              <Nav.Link as={NavLink} to="/blogs" className={getNavLinkClass}>Blogs</Nav.Link>
               <button className='green-button' onClick={handleClick}>
-      Contact Us
-    </button>
+                Contact Us
+              </button>
             </Nav>
           </Navbar.Collapse>
         </div>
