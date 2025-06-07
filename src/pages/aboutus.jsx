@@ -43,7 +43,7 @@ const Aboutus = () => {
           </div>
           <div className="treeblock-details-about">
             <div className="treeblock-title-common-about">
-              <h2>About WEALTHY TREE</h2>
+              <h2>About <span>WEALTHY TREE</span></h2>
               <p>WEALTHY TREE was founded with a mission to simplify financial management for individuals, families, and businesses. Our team brings decades of combined expertise in wealth management, insurance solutions, and taxation compliance. </p>
               <p>We don’t just manage wealth - we nurture it. Every solution we offer is designed around your life goals, values and to grow your business with smoother tax compliances. With a transparent, client-first approach, our goal is to deliver peace of mind, clarity, and long-term results. At WEALTHY TREE, your ambitions are the seeds - and we help them nurture & grow.  </p>
             </div>

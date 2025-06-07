@@ -27,10 +27,11 @@ const Header = () => {
             <Navbar.Brand href="#home">
             <img src={mainheaderlogo} alt="mainheaderlogo" />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          
           </div>
+          <div className=""><Navbar.Toggle aria-controls="basic-navbar-nav" /></div>
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto flex main-navbar-data">
+            <Nav className="ms-auto flex items-center main-navbar-data">
               <Nav.Link as={NavLink} to="/" className={getNavLinkClass}>Home</Nav.Link>
               <Nav.Link as={NavLink} to="/about" className={getNavLinkClass}>About Us</Nav.Link>
               <NavDropdown title="Services" id="basic-nav-dropdown">
