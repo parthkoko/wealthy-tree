@@ -694,6 +694,14 @@
         .ourservice-inner-data {
         padding: 0px 10px 50px 10px;
     }
+    .footer-manu ul li span img {
+    width: 22px;
+    height: 22px;
+}
+.social-media ul li a img {
+    width: 45px;
+    height: 45px;
+}
   
 }
 @media only screen and (max-width: 480px) {
@@ -802,6 +810,14 @@
         .about-banner-section {
         height: 210px !important;
     }
+    .footer-manu ul li span img {
+    width: 18px;
+    height: 18px;
+}
+.social-media ul li a img {
+    width: 42px;
+    height: 42px;
+}
 }
 @media only screen and (max-width: 389px) {
 }
