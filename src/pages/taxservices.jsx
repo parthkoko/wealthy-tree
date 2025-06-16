@@ -40,7 +40,7 @@ const TaxServices = () => {
                           <img className='invest-grey-round' src={investmeanticon} alt="investmeanticon" />
                           <h3>Income Tax</h3>
                           <p>Expert income tax planning, filing, and compliance to optimize your tax liabilities.</p>
-                          <button className='flex gap-1 items-center'><span>Read More</span> <span><img src={righttoparrow} alt="righttoparrow" /></span></button>
+                          {/* <button className='flex gap-1 items-center'><span>Read More</span> <span><img src={righttoparrow} alt="righttoparrow" /></span></button> */}
                         </div>
                       </div>
                     <div className="ourservice-inner-card-data">
@@ -49,7 +49,7 @@ const TaxServices = () => {
                           <img className='invest-grey-round' src={investmeanticon} alt="investmeanticon" />
                           <h3>GST</h3>
                           <p>Complete GST registration, filing, and advisory services to keep your business compliant.</p>
-                          <button className='flex gap-1 items-center'><span>Read More</span> <span><img src={righttoparrow} alt="righttoparrow" /></span></button>
+                          {/* <button className='flex gap-1 items-center'><span>Read More</span> <span><img src={righttoparrow} alt="righttoparrow" /></span></button> */}
                         </div>
                       </div>
                     <div className="ourservice-inner-card-data">
@@ -58,7 +58,7 @@ const TaxServices = () => {
                           <img className='invest-grey-round' src={investmeanticon} alt="investmeanticon" />
                           <h3>ROC <span>(Registrar of Companies)</span></h3>
                           <p>Company compliance, filings, annual returns, and director-related services under one roof.</p>
-                          <button className='flex gap-1 items-center'><span>Read More</span> <span><img src={righttoparrow} alt="righttoparrow" /></span></button>
+                          {/* <button className='flex gap-1 items-center'><span>Read More</span> <span><img src={righttoparrow} alt="righttoparrow" /></span></button> */}
                         </div>
                       </div>
                     <div className="ourservice-inner-card-data">
@@ -67,7 +67,7 @@ const TaxServices = () => {
                           <img className='invest-grey-round' src={investmeanticon} alt="investmeanticon" />
                           <h3>Audit</h3>
                           <p>Lorem ipsum dolor sit amet, consecte Lorem ipsum dolor sit amet, consecte tuer adipiscing elitsed diam nonummy nibh euismod laoree.</p>
-                          <button className='flex gap-1 items-center'><span>Read More</span> <span><img src={righttoparrow} alt="righttoparrow" /></span></button>
+                          {/* <button className='flex gap-1 items-center'><span>Read More</span> <span><img src={righttoparrow} alt="righttoparrow" /></span></button> */}
                         </div>
                       </div>
                     <div className="ourservice-inner-card-data">
@@ -76,7 +76,7 @@ const TaxServices = () => {
                           <img className='invest-grey-round' src={investmeanticon} alt="investmeanticon" />
                           <h3>Other Financial Services</h3>
                           <p>Customized financial solutions including advisory, and compliance services for individuals and enterprises.</p>
-                          <button className='flex gap-1 items-center'><span>Read More</span> <span><img src={righttoparrow} alt="righttoparrow" /></span></button>
+                          {/* <button className='flex gap-1 items-center'><span>Read More</span> <span><img src={righttoparrow} alt="righttoparrow" /></span></button> */}
                         </div>
                       </div>
                   

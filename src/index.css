@@ -351,7 +351,7 @@ transition: 0.4s ease-in-out;
 font-size: var(--font-48px);
 font-weight: 600;
 /* columns: var(--green-color); */
-color: var(--secondary-color);
+color: var(--green-color);
 text-align: center;
 margin-bottom: 70px;
 }
@@ -373,7 +373,7 @@ color: var(--light-green-color);
   /* max-width: 480px; */
   margin-top: 10px;
   margin-bottom: 30px;
-  height: 63px;
+  height: 70px;
     min-height: auto;
    display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -702,11 +702,11 @@ padding: 10px 0px;
   font-weight: 400;
   color: var(--secondary-color);
   height: 132px;
-   min-height: auto;
+   /* min-height: auto;
    display: -webkit-box;
   -webkit-box-orient: vertical;
    -webkit-line-clamp:4;
-  overflow:hidden;
+  overflow:hidden; */
 }
 .treeblock-details-about p{
   max-width: 800px;

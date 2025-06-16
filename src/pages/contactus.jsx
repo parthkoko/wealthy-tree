@@ -37,13 +37,14 @@ const ContactUs = () => {
     </div>
     <div className="contact-map">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.681098632812!2d72.53499007380907!3d23.10876701310901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83d6ac87abcd%3A0x687cb1f034cbfd85!2skoko%20Studio!5e0!3m2!1sen!2sin!4v1748519752878!5m2!1sen!2sin"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.795673571575!2d72.56830517616493!3d23.031273316001826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84592ebaaaab%3A0xb7394aa27743e449!2sSun%20Westbank!5e0!3m2!1sen!2sin!4v1750053678673!5m2!1sen!2sin"
         width="600"
         height="570px"
         style={{ border: 0 ,borderRadius: '20px' }}
         allowFullScreen=""
         loading="lazy"
       ></iframe>
+      
     </div>
     </div>
     </div>

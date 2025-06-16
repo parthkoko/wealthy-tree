@@ -41,7 +41,7 @@ const InsuranceServices = () => {
                           <img className='invest-grey-round' src={investmeanticon} alt="investmeanticon" />
                           <h3>Life Insurance</h3>
                           <p>Ensure your family’s financial safety even in your absence. We help you choose the right term and endowment plans.</p>
-                          <button className='flex gap-1 items-center'><span>Read More</span> <span><img src={righttoparrow} alt="righttoparrow" /></span></button>
+                          {/* <button className='flex gap-1 items-center'><span>Read More</span> <span><img src={righttoparrow} alt="righttoparrow" /></span></button> */}
                         </div>
                       </div>
                     <div className="ourservice-inner-card-data">
@@ -50,7 +50,7 @@ const InsuranceServices = () => {
                           <img className='invest-grey-round' src={investmeanticon} alt="investmeanticon" />
                           <h3>Health Insurance</h3>
                           <p>Stay protected from rising medical costs with customized health coverage that fits your lifestyle.</p>
-                          <button className='flex gap-1 items-center'><span>Read More</span> <span><img src={righttoparrow} alt="righttoparrow" /></span></button>
+                          {/* <button className='flex gap-1 items-center'><span>Read More</span> <span><img src={righttoparrow} alt="righttoparrow" /></span></button> */}
                         </div>
                       </div>
                     <div className="ourservice-inner-card-data">
@@ -59,7 +59,7 @@ const InsuranceServices = () => {
                           <img className='invest-grey-round' src={investmeanticon} alt="investmeanticon" />
                           <h3>General Insurance</h3>
                           <p>Safeguard your assets - home, travel, vehicles, and more - with the right general insurance plans.</p>
-                          <button className='flex gap-1 items-center'><span>Read More</span> <span><img src={righttoparrow} alt="righttoparrow" /></span></button>
+                          {/* <button className='flex gap-1 items-center'><span>Read More</span> <span><img src={righttoparrow} alt="righttoparrow" /></span></button> */}
                         </div>
                       </div>
                    

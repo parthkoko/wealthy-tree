@@ -45,8 +45,8 @@ const Footer = () => {
               <ul>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/about">About Us</Link></li>
-                <li><Link to="/news">News</Link></li>
-                <li><Link to="/blogs">Blogs</Link></li>
+                {/* <li><Link to="/news">News</Link></li>
+                <li><Link to="/blogs">Blogs</Link></li> */}
                 <li><Link to="/contactus">Contact Us</Link></li>
               </ul>
             </div>
@@ -70,17 +70,18 @@ const Footer = () => {
             </div>
             <div className="footer-manu">
               <ul>
-                <li><a href="#"><span><img src={maps} alt="maps" /></span>2715 Ash Dr. San Jose, South <br /> Dakota 83475</a></li>
-                <li className="flex items-center gap-4">
+                <li><a href="#"><span><img src={maps} alt="maps" /></span>B-702 Sun Westbank, Ashram Rd, <br /> Near Vallabh Sadan, <br /> Opp. City Gold Cinema, Navrangpura, <br /> Ahmedabad, Gujarat 380009, India</a></li>
+                {/* <li className="flex items-center gap-4">
                 <span>
                 <img src={phoneicon} alt="phoneicon" />
                 </span>
-                 <span>
-                 <a href="tel:+1234567890">+1 234 567 890</a>
+                 
+                 <a href=""></a>
                  <a href="tel:+0987654321">+0 987 654 321</a>
-                 </span>
-                 </li>
-                 <li><a href="mailto:trungkienspktnd@gamail.com"><span><img src={mailicon} alt="mailicon" /></span>trungkienspktnd@gamail.com</a></li>
+                 
+                 </li> */}
+                 <li><a href="tel:+1234567890"><span><img src={phoneicon} alt="phoneicon" /></span>+91 70412 22399</a></li>
+                 <li><a href="mailto:info@wealthytree.in"><span><img src={mailicon} alt="mailicon" /></span>info@wealthytree.in</a></li>
               </ul>
             </div>
           </div>

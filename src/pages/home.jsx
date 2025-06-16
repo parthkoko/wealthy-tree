@@ -95,7 +95,7 @@ const Home = () => {
 <img className='w-full ' src={homebanner} alt="homebanner"  />
 <Container>
 <div className="homebanner-detail">
-  <h2> Grow Wealth. <span>Fulfill Your Dreams.</span></h2>
+  <h2> Grow Wealth. <span>Fulfill Dreams.</span></h2>
   <p>From Smart Investments to Secure Insurance and Trusted Tax Solutions - WEALTHY TREE is your All-in-one Financial Growth Partner.</p>
   <button onClick={() => navigate('/contactus')} className='white-button'> Start Your Wealth Creation Journey</button>
 </div>
@@ -133,7 +133,7 @@ const Home = () => {
       <div className="welcome-detail">
         <h2>Welcome to <span>WEALTHY TREE</span></h2>
         <p>At <b>WEALTHY TREE</b>, we believe that financial empowerment goes beyond products and transactions - it's about building long-term partnerships and providing a solid foundation for future generations. Founded with the vision to simplify the financial journey for every person, we offer a comprehensive suite of services including investment solutions, insurance coverage, and tax advisory under one roof.</p>
-        <button className='green-button'>Learn more</button>
+        <button onClick={() => navigate('/about')} className='green-button'>Learn more</button>
       </div>
       </div>
       </div>
@@ -214,6 +214,18 @@ const Home = () => {
     },
     1024: {
       slidesPerView: 2.1,
+    },
+    1440: {
+      slidesPerView: 3,
+    },
+    1600: {
+      slidesPerView: 3,
+    },
+    1792: {
+      slidesPerView: 3,
+    },
+    1920: {
+      slidesPerView: 3,
     },
   }}
       onSlideChange={() => console.log('slide change')}
@@ -342,6 +354,78 @@ const Home = () => {
             <div className="profile-icon"><img src={profileclient} alt="profileclient" /></div>
             <div className="profile-detail">
               <h4> R K Agrawal</h4>
+              {/* <p>Lorem ipsum</p> */}
+            </div>
+          </div>
+        </div></SwiperSlide>
+      <SwiperSlide><div className="success-story">
+          <div className="rating-section flex justify-between items-center">
+            <div className='flex items-center gap-1'>
+              <img src={Star} alt="Star" />
+              <img src={Star} alt="Star" />
+              <img src={Star} alt="Star" />
+              <img src={Star} alt="Star" />
+              <img src={Star} alt="Star" />
+            </div>
+            <div>
+               <img src={comaicon} alt="comaicon" />
+            </div>
+          </div>
+          <div className="details-story">
+            <p>“Retirement is not an age, It’s a financial number. ”</p>
+          </div>
+          <div className="profile-client flex items-center gap-3">
+            <div className="profile-icon"><img src={profileclient} alt="profileclient" /></div>
+            <div className="profile-detail">
+              <h4> Robert Kiyosaki</h4>
+              {/* <p>Lorem ipsum</p> */}
+            </div>
+          </div>
+        </div></SwiperSlide>
+      <SwiperSlide><div className="success-story">
+          <div className="rating-section flex justify-between items-center">
+            <div className='flex items-center gap-1'>
+              <img src={Star} alt="Star" />
+              <img src={Star} alt="Star" />
+              <img src={Star} alt="Star" />
+              <img src={Star} alt="Star" />
+              <img src={Star} alt="Star" />
+            </div>
+            <div>
+               <img src={comaicon} alt="comaicon" />
+            </div>
+          </div>
+          <div className="details-story">
+            <p>“In building a strong foundation, focus on value, not just price ”</p>
+          </div>
+          <div className="profile-client flex items-center gap-3">
+            <div className="profile-icon"><img src={profileclient} alt="profileclient" /></div>
+            <div className="profile-detail">
+              <h4> Warren Buffet</h4>
+              {/* <p>Lorem ipsum</p> */}
+            </div>
+          </div>
+        </div></SwiperSlide>
+      <SwiperSlide><div className="success-story">
+          <div className="rating-section flex justify-between items-center">
+            <div className='flex items-center gap-1'>
+              <img src={Star} alt="Star" />
+              <img src={Star} alt="Star" />
+              <img src={Star} alt="Star" />
+              <img src={Star} alt="Star" />
+              <img src={Star} alt="Star" />
+            </div>
+            <div>
+               <img src={comaicon} alt="comaicon" />
+            </div>
+          </div>
+          <div className="details-story">
+            <p>“	The biggest adventure you can take is to live the life of your dreams ”</p>
+          </div>
+          <div className="profile-client flex items-center gap-3">
+            <div className="profile-icon"><img src={profileclient} alt="profileclient" /></div>
+            <div className="profile-detail">
+              <h4> Oprah Winfrey </h4>
               {/* <p>Lorem ipsum</p> */}
             </div>
           </div>
