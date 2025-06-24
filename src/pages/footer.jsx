@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import footerlogo from "../assets/images/footerlogo.svg";
 import facebook from "../assets/images/facebook.svg";
 import twitter from "../assets/images/twitter.svg";
@@ -7,21 +7,26 @@ import instagram from "../assets/images/instagram.svg";
 import maps from "../assets/images/maps.svg";
 import phoneicon from "../assets/images/phoneicon.svg";
 import mailicon from "../assets/images/mailicon.svg";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-     <div className="footer-main">
+    <div className="footer-main">
       <div className="wealthy-container">
         <div className="footer-inner-detail">
           <div className="footer-detail-common">
             <div className="logo-footer">
-              <a href="#"> <img src={footerlogo} alt="footerlogo" /></a>
-             
+              <a href="/">
+                {" "}
+                <img src={footerlogo} alt="footerlogo" />
+              </a>
             </div>
-             <p>Lorem ipsum dolor sit amet, consecte Lorem consecte tuer adipiscing elitsed diam nonummy.</p>
-          <div className="social-media">
-            <ul>
+            <p>
+              Lorem ipsum dolor sit amet, consecte Lorem consecte tuer
+              adipiscing elitsed diam nonummy.
+            </p>
+            <div className="social-media">
+              {/* <ul>
               <li>
                 <a href=""><img src={facebook} alt="facebook" /></a>
               </li>
@@ -34,8 +39,8 @@ const Footer = () => {
               <li>
                 <a href=""><img src={instagram} alt="instagram" /></a>
               </li>
-            </ul>
-          </div>
+            </ul> */}
+            </div>
           </div>
           <div className="footer-detail-common">
             <div className="footer-title-inner">
@@ -43,11 +48,17 @@ const Footer = () => {
             </div>
             <div className="footer-manu">
               <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About Us</Link></li>
+                <li>
+                  <Link to="/">Home</Link>
+                </li>
+                <li>
+                  <Link to="/about">About Us</Link>
+                </li>
                 {/* <li><Link to="/news">News</Link></li>
                 <li><Link to="/blogs">Blogs</Link></li> */}
-                <li><Link to="/contactus">Contact Us</Link></li>
+                <li>
+                  <Link to="/contactus">Contact Us</Link>
+                </li>
               </ul>
             </div>
           </div>
@@ -57,10 +68,15 @@ const Footer = () => {
             </div>
             <div className="footer-manu">
               <ul>
-                <li><Link to="/investmentservices">Investment Services</Link></li>
-                <li><Link to="/insuranceservices">Insurance Services</Link></li>
-                <li><Link to="/taxservices">Tax Services</Link></li>
-                
+                <li>
+                  <Link to="/investmentservices">Investment Services</Link>
+                </li>
+                <li>
+                  <Link to="/insuranceservices">Insurance Services</Link>
+                </li>
+                <li>
+                  <Link to="/taxservices">Tax Services</Link>
+                </li>
               </ul>
             </div>
           </div>
@@ -70,28 +86,50 @@ const Footer = () => {
             </div>
             <div className="footer-manu">
               <ul>
-                <li><a href="#"><span><img src={maps} alt="maps" /></span>B-702 Sun Westbank, Ashram Rd, <br /> Near Vallabh Sadan, <br /> Opp. City Gold Cinema, Navrangpura, <br /> Ahmedabad, Gujarat 380009, India</a></li>
+                <li>
+                  <a href="#">
+                    <span>
+                      <img src={maps} alt="maps" />
+                    </span>
+                    B-702 Sun Westbank, Ashram Rd, <br /> Near Vallabh Sadan,{" "}
+                    <br /> Opp. City Gold Cinema, Navrangpura, <br /> Ahmedabad,
+                    Gujarat 380009, India
+                  </a>
+                </li>
                 {/* <li className="flex items-center gap-4">
                 <span>
-                <img src={phoneicon} alt="phoneicon" />
+                <img src={phoneicon} alt="phoneicon" />z
                 </span>
                  
                  <a href=""></a>
                  <a href="tel:+0987654321">+0 987 654 321</a>
                  
                  </li> */}
-                 <li><a href="tel:+1234567890"><span><img src={phoneicon} alt="phoneicon" /></span>+91 70412 22399</a></li>
-                 <li><a href="mailto:info@wealthytree.in"><span><img src={mailicon} alt="mailicon" /></span>info@wealthytree.in</a></li>
+                <li>
+                  <a href="tel:+1234567890">
+                    <span>
+                      <img src={phoneicon} alt="phoneicon" />
+                    </span>
+                    +91 70412 22399
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:info@wealthytree.in">
+                    <span>
+                      <img src={mailicon} alt="mailicon" />
+                    </span>
+                    info@wealthytree.in
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-      <div className="footer-copyright">
-      </div>
+      <div className="footer-copyright"></div>
       <div className="wealthy-container">
         <div className="footer-copyright-detail">
-          <p> © 2023  Company. All Right Reserved.</p>
+          <p> © 2023 Company. All Right Reserved.</p>
         </div>
       </div>
     </div>
