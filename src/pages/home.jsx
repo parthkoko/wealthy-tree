@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
-import { Button } from 'react-bootstrap';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import React, { useEffect } from "react";
+import { Button } from "react-bootstrap";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
 import mainheaderlogo from "../assets/images/mainheaderlogo.svg";
 import homebanner from "../assets/images/homebanner.png";
 import treeone from "../assets/images/treeone.png";
@@ -40,24 +40,21 @@ import blogthree from "../assets/images/blogthree.png";
 import blogtwo from "../assets/images/blogtwo.png";
 import blogone from "../assets/images/blogone.png";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 // import { Autoplay } from 'swiper/modules';
-import { Autoplay, Pagination } from 'swiper/modules';
-import 'swiper/css/pagination';
-import Header from '../header';
-import Footer from './footer';
-import { useNavigate } from 'react-router-dom';
-
+import { Autoplay, Pagination } from "swiper/modules";
+import "swiper/css/pagination";
+import Header from "../header";
+import Footer from "./footer";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-
-   useEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-    const navigate = useNavigate();
-
+  const navigate = useNavigate();
 
   return (
     <div className=" main-homepage">
@@ -88,544 +85,682 @@ const Home = () => {
       </Container>
     </Navbar>
     </div> */}
-  
-    {/* <Header /> */}
-    
-    <div className='main-home-banner relative w-full'>
-<img className='w-full ' src={homebanner} alt="homebanner"  />
-<Container>
-<div className="homebanner-detail">
-  <h2> Grow Wealth. <span>Fulfill Dreams.</span></h2>
-  <p>From Smart Investments to Secure Insurance and Trusted Tax Solutions - WEALTHY TREE is your All-in-one Financial Growth Partner.</p>
-  <button onClick={() => navigate('/contactus')} className='white-button'> Start Your Wealth Creation Journey</button>
-</div>
-</Container>
-    </div>
-    <div className="welcome-section">
-      <div className="wealthy-container">
-      <div className="welcome-section-inner">
-      <div className="welcome-images">
-        {/* <div className="welcomeimages-grid">
+
+      {/* <Header /> */}
+
+      <div className="main-home-banner relative w-full">
+        <img className="w-full h-[600px] object-cover" src={homebanner} alt="homebanner" />
+        <Container>
+          <div className="homebanner-detail">
+            <h2>
+              {" "}
+              Grow Wealth. <span>Fulfill Dreams.</span>
+            </h2>
+            <p>
+              From Smart Investments to Secure Insurance and Trusted Tax
+              Solutions - WEALTHY TREE is your All-in-one Financial Growth
+              Partner.
+            </p>
+            <button
+              onClick={() => navigate("/contactus")}
+              className="white-button"
+            >
+              {" "}
+              Start Your Wealth Creation Journey
+            </button>
+          </div>
+        </Container>
+      </div>
+      <div className="welcome-section">
+        <div className="wealthy-container">
+          <div className="welcome-section-inner">
+            <div className="welcome-images">
+              {/* <div className="welcomeimages-grid">
           <img src={treeone} alt="treeone" />
           
         </div> */}
-        {/* <div className="welcomeimages-grid"></div>
+              {/* <div className="welcomeimages-grid"></div>
         <div className="welcomeimages-grid"></div>
         <div className="welcomeimages-grid"></div> */}
-            <div className="welcomeimages-grid">
-      <div className="box box1 welcomeimages-grid-inner">
-        <img src={welcomeone} alt="welcomeone" />
-      </div>
-      <div className="box box2 welcomeimages-grid-inner">
-        <img src={welcometwo} alt="welcometwo" />
-      </div>
-      <div className="box box3 welcomeimages-grid-inner">
-        <div className="welcomeimages-grid-inner-text">
-          <strong>5+</strong>
-          <span>years of<br />experiences</span>
-        </div>
-      </div>
-      <div className="box box4 welcomeimages-grid-inner">
-        <img src={welcomethree} alt="welcomethree" />
-      </div>
-    </div>
-      </div>
-      <div className="welcome-detail">
-        <h2>Welcome to <span>WEALTHY TREE</span></h2>
-        <p>At <b>WEALTHY TREE</b>, we believe that financial empowerment goes beyond products and transactions - it's about building long-term partnerships and providing a solid foundation for future generations. Founded with the vision to simplify the financial journey for every person, we offer a comprehensive suite of services including investment solutions, insurance coverage, and tax advisory under one roof.</p>
-        <button onClick={() => navigate('/about')} className='green-button'>Learn more</button>
-      </div>
-      </div>
-      </div>
-    </div>
-    <div className="ourservices-section">
-      <div className="wealthy-container">
-        <div className="ourservices-section">
-          <div className="ourservices-section-images">
-            <img className='w-full' src={ourservices} alt="ourservices" />
-          </div>
-        <div className="ourservice-inner-data">
-<div className="ourservice-title">
-  <h2>Our <span>Services</span></h2>
-</div>
-<div className="ourservice-inner-card">
-  <div className="ourservice-inner-card-data">
-    <img src={servicesone} alt="servicesone" />
-    <div className="serviceinner-card-details">
-      <img className='invest-grey-round' src={investmeanticon} alt="investmeanticon" />
-      <h3>Investment Services</h3>
-      <p> Grow your Wealth through mix & match of different financial products specially curated for you based on your Risk Profile & Unlock Financial Freedom at every stage of life.</p>
-      <button   onClick={() => navigate('/InvestmentServices')} className='flex gap-2 items-center'><span>Read More</span> <span><img src={righttoparrow} alt="righttoparrow" /></span></button>
-    </div>
-  </div>
-  <div className="ourservice-inner-card-data">
-    <img src={servicestwo} alt="servicestwo" />
-    <div className="serviceinner-card-details">
-      <img className='invest-grey-round' src={insurance} alt="insurance" />
-      <h3>Insurance Services</h3>
-      <p>Protect what matters with Life, Health, and General Insurance plans - customized to secure uncertainities of life and future goals.</p>
-      <button onClick={() => navigate('/insuranceservices')} className='flex gap-2 items-center'><span>Read More</span> <span><img src={righttoparrow} alt="righttoparrow" /></span></button>
-    </div>
-  </div>
-  <div className="ourservice-inner-card-data">
-    <img src={servicesthree} alt="servicesthree" />
-    <div className="serviceinner-card-details">
-      <img className='invest-grey-round' src={tex} alt="tex" />
-      <h3>Tax Services</h3>
-      <p>Simplify your Tax Filings & all Compliances related to Income Tax, GST, Audit & ROC - all under one roof.</p>
-      <button onClick={() => navigate('/taxservices')}  className='flex gap-2 items-center'><span>Read More</span> <span><img src={righttoparrow} alt="righttoparrow" /></span></button>
-    </div>
-  </div>
-</div>
-        </div>
-      </div>
-      </div>
-    </div>
-    <div className="client-section">
-      <div className="">
-        <div className="client-sucess-main">
-          <div className="client-sucess-title">
-            <h2>Our <span> Client Stories</span></h2>
-          </div>
-          <div className="client-sucess-swiper">
-               <Swiper
-               modules={[Autoplay, Pagination]}
-      spaceBetween={50}
-      slidesPerView={3}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
-         autoplay={{
-        delay: 3000,
-        disableOnInteraction: false,
-      }}
-        
-   
-     
-        pagination={{ clickable: true }}
-               breakpoints={{
-    0: {
-      slidesPerView: 1,
-    },
-    576: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 2.1,
-    },
-    1440: {
-      slidesPerView: 3,
-    },
-    1600: {
-      slidesPerView: 3,
-    },
-    1792: {
-      slidesPerView: 3,
-    },
-    1920: {
-      slidesPerView: 3,
-    },
-  }}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
-      
-    >
-      <SwiperSlide>
-        <div className="success-story">
-          <div className="rating-section flex justify-between items-center">
-            <div className='flex items-center gap-1'>
-              <img src={Star} alt="Star" />
-              <img src={Star} alt="Star" />
-              <img src={Star} alt="Star" />
-              <img src={Star} alt="Star" />
-              <img src={Star} alt="Star" />
+              <div className="welcomeimages-grid">
+                <div className="box box1 welcomeimages-grid-inner">
+                  <img src={welcomeone} alt="welcomeone" />
+                </div>
+                <div className="box box2 welcomeimages-grid-inner">
+                  <img src={welcometwo} alt="welcometwo" />
+                </div>
+                <div className="box box3 welcomeimages-grid-inner">
+                  <div className="welcomeimages-grid-inner-text">
+                    <strong>5+</strong>
+                    <span>
+                      years of
+                      <br />
+                      experiences
+                    </span>
+                  </div>
+                </div>
+                <div className="box box4 welcomeimages-grid-inner">
+                  <img src={welcomethree} alt="welcomethree" />
+                </div>
+              </div>
             </div>
-            <div>
-               <img src={comaicon} alt="comaicon" />
-            </div>
-          </div>
-          <div className="details-story">
-            <p>“Shaunakbhai, helped me to recover a forgotten portfolio of my father which also doesn’t have a nomination.I had no idea about that unclaimed investments - now it’s working for me again!”</p>
-          </div>
-          <div className="profile-client flex items-center gap-3">
-            <div className="profile-icon"><img src={profileclient} alt="profileclient" /></div>
-            <div className="profile-detail">
-              <h4>Harshad Pandya</h4>
-              {/* <p>Lorem ipsum</p> */}
+            <div className="welcome-detail">
+              <h2>
+                Welcome to <span>WEALTHY TREE</span>
+              </h2>
+              <p>
+                At <b>WEALTHY TREE</b>, we believe that financial empowerment
+                goes beyond products and transactions - it's about building
+                long-term partnerships and providing a solid foundation for
+                future generations. Founded with the vision to simplify the
+                financial journey for every person, we offer a comprehensive
+                suite of services including investment solutions, insurance
+                coverage, and tax advisory under one roof.
+              </p>
+              <button
+                onClick={() => navigate("/about")}
+                className="green-button"
+              >
+                Learn more
+              </button>
             </div>
           </div>
         </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="success-story">
-          <div className="rating-section flex justify-between items-center">
-            <div className='flex items-center gap-1'>
-              <img src={Star} alt="Star" />
-              <img src={Star} alt="Star" />
-              <img src={Star} alt="Star" />
-              <img src={Star} alt="Star" />
-              <img src={Star} alt="Star" />
+      </div>
+      <div className="ourservices-section">
+        <div className="wealthy-container">
+          <div className="ourservices-section">
+            <div className="ourservices-section-images">
+              <img className="w-full" src={ourservices} alt="ourservices" />
             </div>
-            <div>
-               <img src={comaicon} alt="comaicon" />
-            </div>
-          </div>
-          <div className="details-story">
-            <p>“Their retirement planning is spot-on. I now have clarity and confidence in my future.”</p>
-          </div>
-          <div className="profile-client flex items-center gap-3">
-            <div className="profile-icon"><img src={profileclient} alt="profileclient" /></div>
-            <div className="profile-detail">
-              <h4>Kshitij Patel</h4>
-              {/* <p>Lorem ipsum</p> */}
+            <div className="ourservice-inner-data">
+              <div className="ourservice-title">
+                <h2>
+                  Our <span>Services</span>
+                </h2>
+              </div>
+              <div className="ourservice-inner-card">
+                <div className="ourservice-inner-card-data">
+                  <img src={servicesone} alt="servicesone" />
+                  <div className="serviceinner-card-details">
+                    <img
+                      className="invest-grey-round"
+                      src={investmeanticon}
+                      alt="investmeanticon"
+                    />
+                    <h3>Investment Services</h3>
+                    <p>
+                      {" "}
+                      Grow your Wealth through mix & match of different
+                      financial products specially curated for you based on your
+                      Risk Profile & Unlock Financial Freedom at every stage of
+                      life.
+                    </p>
+                    <button
+                      onClick={() => navigate("/InvestmentServices")}
+                      className="flex gap-2 items-center"
+                    >
+                      <span>Read More</span>{" "}
+                      <span>
+                        <img src={righttoparrow} alt="righttoparrow" />
+                      </span>
+                    </button>
+                  </div>
+                </div>
+                <div className="ourservice-inner-card-data">
+                  <img src={servicestwo} alt="servicestwo" />
+                  <div className="serviceinner-card-details">
+                    <img
+                      className="invest-grey-round"
+                      src={insurance}
+                      alt="insurance"
+                    />
+                    <h3>Insurance Services</h3>
+                    <p>
+                      Protect what matters with Life, Health, and General
+                      Insurance plans - customized to secure uncertainities of
+                      life and future goals.
+                    </p>
+                    <button
+                      onClick={() => navigate("/insuranceservices")}
+                      className="flex gap-2 items-center"
+                    >
+                      <span>Read More</span>{" "}
+                      <span>
+                        <img src={righttoparrow} alt="righttoparrow" />
+                      </span>
+                    </button>
+                  </div>
+                </div>
+                <div className="ourservice-inner-card-data">
+                  <img src={servicesthree} alt="servicesthree" />
+                  <div className="serviceinner-card-details">
+                    <img className="invest-grey-round" src={tex} alt="tex" />
+                    <h3>Tax Services</h3>
+                    <p>
+                      Simplify your Tax Filings & all Compliances related to
+                      Income Tax, GST, Audit & ROC - all under one roof.
+                    </p>
+                    <button
+                      onClick={() => navigate("/taxservices")}
+                      className="flex gap-2 items-center"
+                    >
+                      <span>Read More</span>{" "}
+                      <span>
+                        <img src={righttoparrow} alt="righttoparrow" />
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="success-story">
-          <div className="rating-section flex justify-between items-center">
-            <div className='flex items-center gap-1'>
-              <img src={Star} alt="Star" />
-              <img src={Star} alt="Star" />
-              <img src={Star} alt="Star" />
-              <img src={Star} alt="Star" />
-              <img src={Star} alt="Star" />
-            </div>
-            <div>
-               <img src={comaicon} alt="comaicon" />
-            </div>
-          </div>
-          <div className="details-story">
-            <p>“The team provided me with a personalized mutual fund strategy & tax planning for my ITR filings that really worked. Great support and insights.”</p>
-          </div>
-          <div className="profile-client flex items-center gap-3">
-            <div className="profile-icon"><img src={profileclient} alt="profileclient" /></div>
-            <div className="profile-detail">
-              <h4>Saumil Vyas</h4>
-              {/* <p>Lorem ipsum</p> */}
-            </div>
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide><div className="success-story">
-          <div className="rating-section flex justify-between items-center">
-            <div className='flex items-center gap-1'>
-              <img src={Star} alt="Star" />
-              <img src={Star} alt="Star" />
-              <img src={Star} alt="Star" />
-              <img src={Star} alt="Star" />
-              <img src={Star} alt="Star" />
-            </div>
-            <div>
-               <img src={comaicon} alt="comaicon" />
-            </div>
-          </div>
-          <div className="details-story">
-            <p>“Thanks to WEALTHY TREE, I finally got my will and estate planning done. It feels good to be prepared.”</p>
-          </div>
-          <div className="profile-client flex items-center gap-3">
-            <div className="profile-icon"><img src={profileclient} alt="profileclient" /></div>
-            <div className="profile-detail">
-              <h4>D P Thakkar</h4>
-              {/* <p>Lorem ipsum</p> */}
-            </div>
-          </div>
-        </div></SwiperSlide>
-      <SwiperSlide><div className="success-story">
-          <div className="rating-section flex justify-between items-center">
-            <div className='flex items-center gap-1'>
-              <img src={Star} alt="Star" />
-              <img src={Star} alt="Star" />
-              <img src={Star} alt="Star" />
-              <img src={Star} alt="Star" />
-              <img src={Star} alt="Star" />
-            </div>
-            <div>
-               <img src={comaicon} alt="comaicon" />
-            </div>
-          </div>
-          <div className="details-story">
-            <p>“One-stop solution for all my financial needs & for my company tax filings. Highly professional and reliable.”</p>
-          </div>
-          <div className="profile-client flex items-center gap-3">
-            <div className="profile-icon"><img src={profileclient} alt="profileclient" /></div>
-            <div className="profile-detail">
-              <h4> R K Agrawal</h4>
-              {/* <p>Lorem ipsum</p> */}
-            </div>
-          </div>
-        </div></SwiperSlide>
-      <SwiperSlide><div className="success-story">
-          <div className="rating-section flex justify-between items-center">
-            <div className='flex items-center gap-1'>
-              <img src={Star} alt="Star" />
-              <img src={Star} alt="Star" />
-              <img src={Star} alt="Star" />
-              <img src={Star} alt="Star" />
-              <img src={Star} alt="Star" />
-            </div>
-            <div>
-               <img src={comaicon} alt="comaicon" />
-            </div>
-          </div>
-          <div className="details-story">
-            <p>“Retirement is not an age, It’s a financial number. ”</p>
-          </div>
-          <div className="profile-client flex items-center gap-3">
-            <div className="profile-icon"><img src={profileclient} alt="profileclient" /></div>
-            <div className="profile-detail">
-              <h4> Robert Kiyosaki</h4>
-              {/* <p>Lorem ipsum</p> */}
-            </div>
-          </div>
-        </div></SwiperSlide>
-      <SwiperSlide><div className="success-story">
-          <div className="rating-section flex justify-between items-center">
-            <div className='flex items-center gap-1'>
-              <img src={Star} alt="Star" />
-              <img src={Star} alt="Star" />
-              <img src={Star} alt="Star" />
-              <img src={Star} alt="Star" />
-              <img src={Star} alt="Star" />
-            </div>
-            <div>
-               <img src={comaicon} alt="comaicon" />
-            </div>
-          </div>
-          <div className="details-story">
-            <p>“In building a strong foundation, focus on value, not just price ”</p>
-          </div>
-          <div className="profile-client flex items-center gap-3">
-            <div className="profile-icon"><img src={profileclient} alt="profileclient" /></div>
-            <div className="profile-detail">
-              <h4> Warren Buffet</h4>
-              {/* <p>Lorem ipsum</p> */}
-            </div>
-          </div>
-        </div></SwiperSlide>
-      <SwiperSlide><div className="success-story">
-          <div className="rating-section flex justify-between items-center">
-            <div className='flex items-center gap-1'>
-              <img src={Star} alt="Star" />
-              <img src={Star} alt="Star" />
-              <img src={Star} alt="Star" />
-              <img src={Star} alt="Star" />
-              <img src={Star} alt="Star" />
-            </div>
-            <div>
-               <img src={comaicon} alt="comaicon" />
-            </div>
-          </div>
-          <div className="details-story">
-            <p>“	The biggest adventure you can take is to live the life of your dreams ”</p>
-          </div>
-          <div className="profile-client flex items-center gap-3">
-            <div className="profile-icon"><img src={profileclient} alt="profileclient" /></div>
-            <div className="profile-detail">
-              <h4> Oprah Winfrey </h4>
-              {/* <p>Lorem ipsum</p> */}
-            </div>
-          </div>
-        </div></SwiperSlide>
-    
-    </Swiper>
-          </div>
-        </div>
       </div>
-    </div>
-    <div className="blog-section relative"
-      style={{
-    backgroundImage: `url(${blogbg})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    height: '680px',
-    width: '100%',
-  }}
-
-    >
-      {/* <img src={blogbg} alt="blogbg" /> */}
-      <div className="wealthy-container">
-      <div className="blog-section-inner ">
-        <div className="ourservice-title blogs-title ">
-  <h2 className=''>Blogs</h2>
-</div> 
-<div className="blog-card">
-  <div className="blog-card-inner">
-    <img src={blogone} alt="blogone" />
-    <div className="blog-detail-card ">
-<div className="profileanddata">
-  <div className="profile-blog">
-    <img src={maleicon} alt="male-icon" />
-    <h3>By : Admin</h3>
-  </div>
-  <div className="profile-blog">
-    <img src={speechicon} alt="speechicon" />
-    <h3>comment</h3>
-  </div>
-</div>
-<h4>Top 5 Mistakes New Investors Make</h4>
-<p>Avoid common pitfalls and start your financial journey on the right track.</p>
-       {/* <button className='green-button'>Contact Us</button> */}
-    </div>
-  </div>
-  <div className="blog-card-inner">
-    <img src={blogtwo} alt="blogtwo" />
-    <div className="blog-detail-card ">
-<div className="profileanddata">
-  <div className="profile-blog">
-    <img src={maleicon} alt="male-icon" />
-    <h3>By : Admin</h3>
-  </div>
-  <div className="profile-blog">
-    <img src={speechicon} alt="speechicon" />
-    <h3>comment</h3>
-  </div>
-</div>
-<h4>Why Goal-Based Planning Beats Traditional Saving</h4>
-<p> Discover how purpose-driven investing can help you reach milestones faster.</p>
-       {/* <button className='green-button'>Contact Us</button> */}
-    </div>
-  </div>
-  <div className="blog-card-inner">
-    <img src={blogthree} alt="blogthree" />
-    <div className="blog-detail-card ">
-<div className="profileanddata">
-  <div className="profile-blog">
-    <img src={maleicon} alt="male-icon" />
-    <h3>By : Admin</h3>
-  </div>
-  <div className="profile-blog">
-    <img src={speechicon} alt="speechicon" />
-    <h3>comment</h3>
-  </div>
-</div>
-<h4>Uncovering the Truth About “Unclaimed” Investments</h4>
-<p>You might have hidden wealth you’re not even aware of - here’s how to find it.</p>
-       {/* <button className='green-button'>Contact Us</button> */}
-    </div>
-  </div>
-  <div className="blog-card-inner">
-    <img src={blogfour} alt="blogfour" />
-    <div className="blog-detail-card ">
-<div className="profileanddata">
-  <div className="profile-blog">
-    <img src={maleicon} alt="male-icon" />
-    <h3>By : Admin</h3>
-  </div>
-  <div className="profile-blog">
-    <img src={speechicon} alt="speechicon" />
-    <h3>comment</h3>
-  </div>
-</div>
-<h4>Why Asset Allocation is necessary</h4>
-<p>Diversifying across multiple asset classes can balance risk and returns better</p>
-       {/* <button className='green-button'>Contact Us</button> */}
-    </div>
-  </div>
-</div>
-      </div>
-      </div>
-    </div>
-    <div className="latest-news-section">
-       <div className="client-sucess-title">
-            <h2>Latest News</h2>
-          </div>
-          <div className="latestnews-swiper">
+      <div className="client-section">
+        <div className="">
+          <div className="client-sucess-main">
+            <div className="client-sucess-title">
+              <h2>
+                Our <span> Client Stories</span>
+              </h2>
+            </div>
+            <div className="client-sucess-swiper">
               <Swiper
-              modules={[Autoplay, Pagination]}
-      spaceBetween={50}
-      slidesPerView={4}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
-         autoplay={{
-        delay: 3000,
-        disableOnInteraction: false,
-      }}
-        pagination={{ clickable: true }}
-          breakpoints={{
-    0: {
-      slidesPerView: 1,
-    },
-    480: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 3,
-    },
-    1600: {
-      slidesPerView: 3.4,
-    },
-    1680: {
-      slidesPerView: 3.5,
-    },
-    1792: {
-      slidesPerView: 3.8,
-    },
-  }}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
-    >
-      <SwiperSlide>
-        <div className="latestnews-card">
-          <img src={rectangledemo} alt="rectangledemo" />
-          <h3>A financial inclusion plan for the whole sector</h3>
-          <div className="card-news-date">
-            <img src={calendericon} alt="calendericon" />
-            <h3>March 20, 2025</h3>
+                modules={[Autoplay, Pagination]}
+                spaceBetween={50}
+                slidesPerView={3}
+                // onSlideChange={() => console.log('slide change')}
+                // onSwiper={(swiper) => console.log(swiper)}
+                autoplay={{
+                  delay: 3000,
+                  disableOnInteraction: false,
+                }}
+                pagination={{ clickable: true }}
+                breakpoints={{
+                  0: {
+                    slidesPerView: 1,
+                  },
+                  576: {
+                    slidesPerView: 1,
+                  },
+                  768: {
+                    slidesPerView: 2,
+                  },
+                  1024: {
+                    slidesPerView: 2.1,
+                  },
+                  1440: {
+                    slidesPerView: 3,
+                  },
+                  1600: {
+                    slidesPerView: 3,
+                  },
+                  1792: {
+                    slidesPerView: 3,
+                  },
+                  1920: {
+                    slidesPerView: 3,
+                  },
+                }}
+              >
+                <SwiperSlide>
+                  <div className="success-story">
+                    <div className="rating-section flex justify-between items-center">
+                      <div className="flex items-center gap-1">
+                        <img src={Star} alt="Star" />
+                        <img src={Star} alt="Star" />
+                        <img src={Star} alt="Star" />
+                        <img src={Star} alt="Star" />
+                        <img src={Star} alt="Star" />
+                      </div>
+                      <div>
+                        <img src={comaicon} alt="comaicon" />
+                      </div>
+                    </div>
+                    <div className="details-story">
+                      <p>
+                        “Shaunakbhai, helped me to recover a forgotten portfolio
+                        of my father which also doesn’t have a nomination.I had
+                        no idea about that unclaimed investments - now it’s
+                        working for me again!”
+                      </p>
+                    </div>
+                    <div className="profile-client flex items-center gap-3">
+                      <div className="profile-icon">
+                        <img src={profileclient} alt="profileclient" />
+                      </div>
+                      <div className="profile-detail">
+                        <h4>Harshad Pandya</h4>
+                        {/* <p>Lorem ipsum</p> */}
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="success-story">
+                    <div className="rating-section flex justify-between items-center">
+                      <div className="flex items-center gap-1">
+                        <img src={Star} alt="Star" />
+                        <img src={Star} alt="Star" />
+                        <img src={Star} alt="Star" />
+                        <img src={Star} alt="Star" />
+                        <img src={Star} alt="Star" />
+                      </div>
+                      <div>
+                        <img src={comaicon} alt="comaicon" />
+                      </div>
+                    </div>
+                    <div className="details-story">
+                      <p>
+                        “Their retirement planning is spot-on. I now have
+                        clarity and confidence in my future.”
+                      </p>
+                    </div>
+                    <div className="profile-client flex items-center gap-3">
+                      <div className="profile-icon">
+                        <img src={profileclient} alt="profileclient" />
+                      </div>
+                      <div className="profile-detail">
+                        <h4>Kshitij Patel</h4>
+                        {/* <p>Lorem ipsum</p> */}
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="success-story">
+                    <div className="rating-section flex justify-between items-center">
+                      <div className="flex items-center gap-1">
+                        <img src={Star} alt="Star" />
+                        <img src={Star} alt="Star" />
+                        <img src={Star} alt="Star" />
+                        <img src={Star} alt="Star" />
+                        <img src={Star} alt="Star" />
+                      </div>
+                      <div>
+                        <img src={comaicon} alt="comaicon" />
+                      </div>
+                    </div>
+                    <div className="details-story">
+                      <p>
+                        “The team provided me with a personalized mutual fund
+                        strategy & tax planning for my ITR filings that really
+                        worked. Great support and insights.”
+                      </p>
+                    </div>
+                    <div className="profile-client flex items-center gap-3">
+                      <div className="profile-icon">
+                        <img src={profileclient} alt="profileclient" />
+                      </div>
+                      <div className="profile-detail">
+                        <h4>Saumil Vyas</h4>
+                        {/* <p>Lorem ipsum</p> */}
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="success-story">
+                    <div className="rating-section flex justify-between items-center">
+                      <div className="flex items-center gap-1">
+                        <img src={Star} alt="Star" />
+                        <img src={Star} alt="Star" />
+                        <img src={Star} alt="Star" />
+                        <img src={Star} alt="Star" />
+                        <img src={Star} alt="Star" />
+                      </div>
+                      <div>
+                        <img src={comaicon} alt="comaicon" />
+                      </div>
+                    </div>
+                    <div className="details-story">
+                      <p>
+                        “Thanks to WEALTHY TREE, I finally got my will and
+                        estate planning done. It feels good to be prepared.”
+                      </p>
+                    </div>
+                    <div className="profile-client flex items-center gap-3">
+                      <div className="profile-icon">
+                        <img src={profileclient} alt="profileclient" />
+                      </div>
+                      <div className="profile-detail">
+                        <h4>D P Thakkar</h4>
+                        {/* <p>Lorem ipsum</p> */}
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="success-story">
+                    <div className="rating-section flex justify-between items-center">
+                      <div className="flex items-center gap-1">
+                        <img src={Star} alt="Star" />
+                        <img src={Star} alt="Star" />
+                        <img src={Star} alt="Star" />
+                        <img src={Star} alt="Star" />
+                        <img src={Star} alt="Star" />
+                      </div>
+                      <div>
+                        <img src={comaicon} alt="comaicon" />
+                      </div>
+                    </div>
+                    <div className="details-story">
+                      <p>
+                        “One-stop solution for all my financial needs & for my
+                        company tax filings. Highly professional and reliable.”
+                      </p>
+                    </div>
+                    <div className="profile-client flex items-center gap-3">
+                      <div className="profile-icon">
+                        <img src={profileclient} alt="profileclient" />
+                      </div>
+                      <div className="profile-detail">
+                        <h4> R K Agrawal</h4>
+                        {/* <p>Lorem ipsum</p> */}
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="success-story">
+                    <div className="rating-section flex justify-between items-center">
+                      <div className="flex items-center gap-1">
+                        <img src={Star} alt="Star" />
+                        <img src={Star} alt="Star" />
+                        <img src={Star} alt="Star" />
+                        <img src={Star} alt="Star" />
+                        <img src={Star} alt="Star" />
+                      </div>
+                      <div>
+                        <img src={comaicon} alt="comaicon" />
+                      </div>
+                    </div>
+                    <div className="details-story">
+                      <p>
+                        “Retirement is not an age, It’s a financial number. ”
+                      </p>
+                    </div>
+                    <div className="profile-client flex items-center gap-3">
+                      <div className="profile-icon">
+                        <img src={profileclient} alt="profileclient" />
+                      </div>
+                      <div className="profile-detail">
+                        <h4> Robert Kiyosaki</h4>
+                        {/* <p>Lorem ipsum</p> */}
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="success-story">
+                    <div className="rating-section flex justify-between items-center">
+                      <div className="flex items-center gap-1">
+                        <img src={Star} alt="Star" />
+                        <img src={Star} alt="Star" />
+                        <img src={Star} alt="Star" />
+                        <img src={Star} alt="Star" />
+                        <img src={Star} alt="Star" />
+                      </div>
+                      <div>
+                        <img src={comaicon} alt="comaicon" />
+                      </div>
+                    </div>
+                    <div className="details-story">
+                      <p>
+                        “In building a strong foundation, focus on value, not
+                        just price ”
+                      </p>
+                    </div>
+                    <div className="profile-client flex items-center gap-3">
+                      <div className="profile-icon">
+                        <img src={profileclient} alt="profileclient" />
+                      </div>
+                      <div className="profile-detail">
+                        <h4> Warren Buffet</h4>
+                        {/* <p>Lorem ipsum</p> */}
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="success-story">
+                    <div className="rating-section flex justify-between items-center">
+                      <div className="flex items-center gap-1">
+                        <img src={Star} alt="Star" />
+                        <img src={Star} alt="Star" />
+                        <img src={Star} alt="Star" />
+                        <img src={Star} alt="Star" />
+                        <img src={Star} alt="Star" />
+                      </div>
+                      <div>
+                        <img src={comaicon} alt="comaicon" />
+                      </div>
+                    </div>
+                    <div className="details-story">
+                      <p>
+                        “ The biggest adventure you can take is to live the life
+                        of your dreams ”
+                      </p>
+                    </div>
+                    <div className="profile-client flex items-center gap-3">
+                      <div className="profile-icon">
+                        <img src={profileclient} alt="profileclient" />
+                      </div>
+                      <div className="profile-detail">
+                        <h4> Oprah Winfrey </h4>
+                        {/* <p>Lorem ipsum</p> */}
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              </Swiper>
+            </div>
           </div>
         </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="latestnews-card">
-          <img src={rectangledemo} alt="rectangledemo" />
-          <h3>A financial inclusion plan for the whole sector</h3>
-          <div className="card-news-date">
-            <img src={calendericon} alt="calendericon" />
-            <h3>March 20, 2025</h3>
+      </div>
+      <div
+        className="blog-section relative"
+        style={{
+          backgroundImage: `url(${blogbg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          height: "680px",
+          width: "100%",
+        }}
+      >
+        {/* <img src={blogbg} alt="blogbg" /> */}
+        <div className="wealthy-container">
+          <div className="blog-section-inner ">
+            <div className="ourservice-title blogs-title ">
+              <h2 className="">Blogs</h2>
+            </div>
+            <div className="blog-card">
+              <div className="blog-card-inner">
+                <img src={blogone} alt="blogone" />
+                <div className="blog-detail-card ">
+                  <div className="profileanddata">
+                    <div className="profile-blog">
+                      <img src={maleicon} alt="male-icon" />
+                      <h3>By : Admin</h3>
+                    </div>
+                    <div className="profile-blog">
+                      <img src={speechicon} alt="speechicon" />
+                      <h3>comment</h3>
+                    </div>
+                  </div>
+                  <h4>Top 5 Mistakes New Investors Make</h4>
+                  <p>
+                    Avoid common pitfalls and start your financial journey on
+                    the right track.
+                  </p>
+                  {/* <button className='green-button'>Contact Us</button> */}
+                </div>
+              </div>
+              <div className="blog-card-inner">
+                <img src={blogtwo} alt="blogtwo" />
+                <div className="blog-detail-card ">
+                  <div className="profileanddata">
+                    <div className="profile-blog">
+                      <img src={maleicon} alt="male-icon" />
+                      <h3>By : Admin</h3>
+                    </div>
+                    <div className="profile-blog">
+                      <img src={speechicon} alt="speechicon" />
+                      <h3>comment</h3>
+                    </div>
+                  </div>
+                  <h4>Why Goal-Based Planning Beats Traditional Saving</h4>
+                  <p>
+                    {" "}
+                    Discover how purpose-driven investing can help you reach
+                    milestones faster.
+                  </p>
+                  {/* <button className='green-button'>Contact Us</button> */}
+                </div>
+              </div>
+              <div className="blog-card-inner">
+                <img src={blogthree} alt="blogthree" />
+                <div className="blog-detail-card ">
+                  <div className="profileanddata">
+                    <div className="profile-blog">
+                      <img src={maleicon} alt="male-icon" />
+                      <h3>By : Admin</h3>
+                    </div>
+                    <div className="profile-blog">
+                      <img src={speechicon} alt="speechicon" />
+                      <h3>comment</h3>
+                    </div>
+                  </div>
+                  <h4>Uncovering the Truth About “Unclaimed” Investments</h4>
+                  <p>
+                    You might have hidden wealth you’re not even aware of -
+                    here’s how to find it.
+                  </p>
+                  {/* <button className='green-button'>Contact Us</button> */}
+                </div>
+              </div>
+              <div className="blog-card-inner">
+                <img src={blogfour} alt="blogfour" />
+                <div className="blog-detail-card ">
+                  <div className="profileanddata">
+                    <div className="profile-blog">
+                      <img src={maleicon} alt="male-icon" />
+                      <h3>By : Admin</h3>
+                    </div>
+                    <div className="profile-blog">
+                      <img src={speechicon} alt="speechicon" />
+                      <h3>comment</h3>
+                    </div>
+                  </div>
+                  <h4>Why Asset Allocation is necessary</h4>
+                  <p>
+                    Diversifying across multiple asset classes can balance risk
+                    and returns better
+                  </p>
+                  {/* <button className='green-button'>Contact Us</button> */}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="latestnews-card">
-          <img src={rectangledemo} alt="rectangledemo" />
-          <h3>A financial inclusion plan for the whole sector</h3>
-          <div className="card-news-date">
-            <img src={calendericon} alt="calendericon" />
-            <h3>March 20, 2025</h3>
-          </div>
+      </div>
+      <div className="latest-news-section">
+        <div className="client-sucess-title">
+          <h2>Latest News</h2>
         </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="latestnews-card">
-          <img src={rectangledemo} alt="rectangledemo" />
-          <h3>A financial inclusion plan for the whole sector</h3>
-          <div className="card-news-date">
-            <img src={calendericon} alt="calendericon" />
-            <h3>March 20, 2025</h3>
-          </div>
+        <div className="latestnews-swiper">
+          <Swiper
+            modules={[Autoplay, Pagination]}
+            spaceBetween={50}
+            slidesPerView={4}
+            // onSlideChange={() => console.log('slide change')}
+            // onSwiper={(swiper) => console.log(swiper)}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            pagination={{ clickable: true }}
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+              },
+              480: {
+                slidesPerView: 1,
+              },
+              768: {
+                slidesPerView: 2,
+              },
+              1024: {
+                slidesPerView: 3,
+              },
+              1600: {
+                slidesPerView: 3.4,
+              },
+              1680: {
+                slidesPerView: 3.5,
+              },
+              1792: {
+                slidesPerView: 3.8,
+              },
+            }}
+            // onSlideChange={() => console.log('slide change')}
+            // onSwiper={(swiper) => console.log(swiper)}
+          >
+            <SwiperSlide>
+              <div className="latestnews-card">
+                <img src={rectangledemo} alt="rectangledemo" />
+                <h3>A financial inclusion plan for the whole sector</h3>
+                <div className="card-news-date">
+                  <img src={calendericon} alt="calendericon" />
+                  <h3>March 20, 2025</h3>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="latestnews-card">
+                <img src={rectangledemo} alt="rectangledemo" />
+                <h3>A financial inclusion plan for the whole sector</h3>
+                <div className="card-news-date">
+                  <img src={calendericon} alt="calendericon" />
+                  <h3>March 20, 2025</h3>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="latestnews-card">
+                <img src={rectangledemo} alt="rectangledemo" />
+                <h3>A financial inclusion plan for the whole sector</h3>
+                <div className="card-news-date">
+                  <img src={calendericon} alt="calendericon" />
+                  <h3>March 20, 2025</h3>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="latestnews-card">
+                <img src={rectangledemo} alt="rectangledemo" />
+                <h3>A financial inclusion plan for the whole sector</h3>
+                <div className="card-news-date">
+                  <img src={calendericon} alt="calendericon" />
+                  <h3>March 20, 2025</h3>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="latestnews-card">
+                <img src={rectangledemo} alt="rectangledemo" />
+                <h3>A financial inclusion plan for the whole sector</h3>
+                <div className="card-news-date">
+                  <img src={calendericon} alt="calendericon" />
+                  <h3>March 20, 2025</h3>
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="latestnews-card">
-          <img src={rectangledemo} alt="rectangledemo" />
-          <h3>A financial inclusion plan for the whole sector</h3>
-          <div className="card-news-date">
-            <img src={calendericon} alt="calendericon" />
-            <h3>March 20, 2025</h3>
-          </div>
-        </div>
-      </SwiperSlide>
-
-    </Swiper>
-          </div>
-    </div>
-    {/* <div className="footer-main">
+      </div>
+      {/* <div className="footer-main">
       <div className="wealthy-container">
         <div className="footer-inner-detail">
           <div className="footer-detail-common">
@@ -707,7 +842,7 @@ const Home = () => {
         </div>
       </div>
     </div> */}
-    <Footer/>
+      <Footer />
     </div>
   );
 };
