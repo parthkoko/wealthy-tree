@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 
-const SERVICE_ID = "service_b2cr3cl";
-const TEMPLATE_ID = "template_u8asuk4";
-const PUBLIC_KEY = "ivbZkXCB3nCoTxsO5";
+const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
+const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -11,7 +11,7 @@ function ContactForm() {
     email: "",
     subject: "",
     phone: "",
-    message: ""
+    message: "",
   });
 
   const [errors, setErrors] = useState({});
@@ -48,7 +48,8 @@ function ContactForm() {
     setErrors({});
     setLoading(true);
 
-    emailjs.send(SERVICE_ID, TEMPLATE_ID, formData, PUBLIC_KEY)
+    emailjs
+      .send(SERVICE_ID, TEMPLATE_ID, formData, PUBLIC_KEY)
       .then(() => {
         setSubmitted(true);
         setLoading(false);
@@ -78,7 +79,9 @@ function ContactForm() {
       <div className="contactus-form">
         <form className="space-y-4" onSubmit={handleSubmit}>
           <div className="inputcommon-group">
-            <label className="input-lable">Your Name <span className="red-text">*</span></label>
+            <label className="input-lable">
+              Your Name <span className="red-text">*</span>
+            </label>
             <input
               type="text"
               name="name"
@@ -92,7 +95,9 @@ function ContactForm() {
           </div>
 
           <div className="inputcommon-group">
-            <label className="input-lable">Your Email <span className="red-text">*</span></label>
+            <label className="input-lable">
+              Your Email <span className="red-text">*</span>
+            </label>
             <input
               type="email"
               name="email"
@@ -107,7 +112,9 @@ function ContactForm() {
 
           <div className="grid grid-cols-2 gap-3">
             <div className="inputcommon-group">
-              <label className="input-lable">Subject <span className="red-text">*</span></label>
+              <label className="input-lable">
+                Subject <span className="red-text">*</span>
+              </label>
               <input
                 type="text"
                 name="subject"
@@ -117,10 +124,14 @@ function ContactForm() {
                 onChange={handleChange}
                 disabled={loading}
               />
-              {errors.subject && <p className="text-red-500">{errors.subject}</p>}
+              {errors.subject && (
+                <p className="text-red-500">{errors.subject}</p>
+              )}
             </div>
             <div className="inputcommon-group">
-              <label className="input-lable">Phone Number <span className="red-text">*</span></label>
+              <label className="input-lable">
+                Phone Number <span className="red-text">*</span>
+              </label>
               <input
                 type="tel"
                 name="phone"
@@ -136,7 +147,9 @@ function ContactForm() {
           </div>
 
           <div className="inputcommon-group">
-            <label className="input-lable">Message <span className="red-text">*</span></label>
+            <label className="input-lable">
+              Message <span className="red-text">*</span>
+            </label>
             <textarea
               name="message"
               rows="5"

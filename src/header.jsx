@@ -24,7 +24,7 @@ const Header = () => {
         <div className="wealthy-container ">
           <div className="main-header-details flex items-center justify-between">
           <div className="logo-header">
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="/">
             <img src={mainheaderlogo} alt="mainheaderlogo" />
           </Navbar.Brand>
           
