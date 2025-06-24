@@ -44,10 +44,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 // import { Autoplay } from 'swiper/modules';
 import { Autoplay, Pagination } from "swiper/modules";
+import "swiper/css";
 import "swiper/css/pagination";
 import Header from "../header";
 import Footer from "./footer";
 import { useNavigate } from "react-router-dom";
+import SuccessStorySlide from "../components/SuccessStorySlide";
 
 const Home = () => {
   useEffect(() => {
@@ -55,6 +57,34 @@ const Home = () => {
   }, []);
 
   const navigate = useNavigate();
+
+  const successStories = [
+    {
+      name: "Harshad Pandya",
+      review:
+        "“Shaunakbhai helped me recover a forgotten portfolio of my father which had no nomination. Now it’s working for me again!”",
+    },
+    {
+      name: "Kshitij Patel",
+      review:
+        "“Their retirement planning is spot-on. I now have clarity and confidence in my future.”",
+    },
+    {
+      name: "Saumil Vyas",
+      review:
+        "“The team provided me with a personalized mutual fund strategy & tax planning for my ITR filings that really worked. Great support and insights.”",
+    },
+    {
+      name: "D P Thakkar",
+      review:
+        "“Thanks to WEALTHY TREE, I finally got my will and estate planning done. It feels good to be prepared.”",
+    },
+    {
+      name: "R K Agrawal",
+      review:
+        "“One-stop solution for all my financial needs & company tax filings. Highly professional and reliable.”",
+    },
+  ];
 
   return (
     <div className=" main-homepage">
@@ -89,7 +119,11 @@ const Home = () => {
       {/* <Header /> */}
 
       <div className="main-home-banner relative w-full">
-        <img className="w-full h-[600px] object-cover" src={homebanner} alt="homebanner" />
+        <img
+          className="w-full h-[600px] object-cover"
+          src={homebanner}
+          alt="homebanner"
+        />
         <Container>
           <div className="homebanner-detail">
             <h2>
@@ -265,295 +299,36 @@ const Home = () => {
                 Our <span> Client Stories</span>
               </h2>
             </div>
-            <div className="client-sucess-swiper">
+            {/* <div className="p-4 md:p-8 lg:px-16 py-10"> */}
+            <div className="p-4 md:p-8 lg:px-16 py-10 swiper-horizontal">
               <Swiper
                 modules={[Autoplay, Pagination]}
                 spaceBetween={50}
                 slidesPerView={3}
-                // onSlideChange={() => console.log('slide change')}
-                // onSwiper={(swiper) => console.log(swiper)}
-                autoplay={{
-                  delay: 3000,
-                  disableOnInteraction: false,
-                }}
+                autoplay={{ delay: 3000, disableOnInteraction: false }}
                 pagination={{ clickable: true }}
                 breakpoints={{
-                  0: {
-                    slidesPerView: 1,
-                  },
-                  576: {
-                    slidesPerView: 1,
-                  },
-                  768: {
-                    slidesPerView: 2,
-                  },
-                  1024: {
-                    slidesPerView: 2.1,
-                  },
-                  1440: {
-                    slidesPerView: 3,
-                  },
-                  1600: {
-                    slidesPerView: 3,
-                  },
-                  1792: {
-                    slidesPerView: 3,
-                  },
-                  1920: {
-                    slidesPerView: 3,
-                  },
+                  0: { slidesPerView: 1 },
+                  576: { slidesPerView: 1 },
+                  768: { slidesPerView: 2 },
+                  1024: { slidesPerView: 2.1 },
+                  1440: { slidesPerView: 3 },
+                  1600: { slidesPerView: 3 },
+                  1792: { slidesPerView: 3 },
+                  1920: { slidesPerView: 3 },
                 }}
               >
-                <SwiperSlide>
-                  <div className="success-story">
-                    <div className="rating-section flex justify-between items-center">
-                      <div className="flex items-center gap-1">
-                        <img src={Star} alt="Star" />
-                        <img src={Star} alt="Star" />
-                        <img src={Star} alt="Star" />
-                        <img src={Star} alt="Star" />
-                        <img src={Star} alt="Star" />
-                      </div>
-                      <div>
-                        <img src={comaicon} alt="comaicon" />
-                      </div>
-                    </div>
-                    <div className="details-story">
-                      <p>
-                        “Shaunakbhai, helped me to recover a forgotten portfolio
-                        of my father which also doesn’t have a nomination.I had
-                        no idea about that unclaimed investments - now it’s
-                        working for me again!”
-                      </p>
-                    </div>
-                    <div className="profile-client flex items-center gap-3">
-                      <div className="profile-icon">
-                        <img src={profileclient} alt="profileclient" />
-                      </div>
-                      <div className="profile-detail">
-                        <h4>Harshad Pandya</h4>
-                        {/* <p>Lorem ipsum</p> */}
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="success-story">
-                    <div className="rating-section flex justify-between items-center">
-                      <div className="flex items-center gap-1">
-                        <img src={Star} alt="Star" />
-                        <img src={Star} alt="Star" />
-                        <img src={Star} alt="Star" />
-                        <img src={Star} alt="Star" />
-                        <img src={Star} alt="Star" />
-                      </div>
-                      <div>
-                        <img src={comaicon} alt="comaicon" />
-                      </div>
-                    </div>
-                    <div className="details-story">
-                      <p>
-                        “Their retirement planning is spot-on. I now have
-                        clarity and confidence in my future.”
-                      </p>
-                    </div>
-                    <div className="profile-client flex items-center gap-3">
-                      <div className="profile-icon">
-                        <img src={profileclient} alt="profileclient" />
-                      </div>
-                      <div className="profile-detail">
-                        <h4>Kshitij Patel</h4>
-                        {/* <p>Lorem ipsum</p> */}
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="success-story">
-                    <div className="rating-section flex justify-between items-center">
-                      <div className="flex items-center gap-1">
-                        <img src={Star} alt="Star" />
-                        <img src={Star} alt="Star" />
-                        <img src={Star} alt="Star" />
-                        <img src={Star} alt="Star" />
-                        <img src={Star} alt="Star" />
-                      </div>
-                      <div>
-                        <img src={comaicon} alt="comaicon" />
-                      </div>
-                    </div>
-                    <div className="details-story">
-                      <p>
-                        “The team provided me with a personalized mutual fund
-                        strategy & tax planning for my ITR filings that really
-                        worked. Great support and insights.”
-                      </p>
-                    </div>
-                    <div className="profile-client flex items-center gap-3">
-                      <div className="profile-icon">
-                        <img src={profileclient} alt="profileclient" />
-                      </div>
-                      <div className="profile-detail">
-                        <h4>Saumil Vyas</h4>
-                        {/* <p>Lorem ipsum</p> */}
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="success-story">
-                    <div className="rating-section flex justify-between items-center">
-                      <div className="flex items-center gap-1">
-                        <img src={Star} alt="Star" />
-                        <img src={Star} alt="Star" />
-                        <img src={Star} alt="Star" />
-                        <img src={Star} alt="Star" />
-                        <img src={Star} alt="Star" />
-                      </div>
-                      <div>
-                        <img src={comaicon} alt="comaicon" />
-                      </div>
-                    </div>
-                    <div className="details-story">
-                      <p>
-                        “Thanks to WEALTHY TREE, I finally got my will and
-                        estate planning done. It feels good to be prepared.”
-                      </p>
-                    </div>
-                    <div className="profile-client flex items-center gap-3">
-                      <div className="profile-icon">
-                        <img src={profileclient} alt="profileclient" />
-                      </div>
-                      <div className="profile-detail">
-                        <h4>D P Thakkar</h4>
-                        {/* <p>Lorem ipsum</p> */}
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="success-story">
-                    <div className="rating-section flex justify-between items-center">
-                      <div className="flex items-center gap-1">
-                        <img src={Star} alt="Star" />
-                        <img src={Star} alt="Star" />
-                        <img src={Star} alt="Star" />
-                        <img src={Star} alt="Star" />
-                        <img src={Star} alt="Star" />
-                      </div>
-                      <div>
-                        <img src={comaicon} alt="comaicon" />
-                      </div>
-                    </div>
-                    <div className="details-story">
-                      <p>
-                        “One-stop solution for all my financial needs & for my
-                        company tax filings. Highly professional and reliable.”
-                      </p>
-                    </div>
-                    <div className="profile-client flex items-center gap-3">
-                      <div className="profile-icon">
-                        <img src={profileclient} alt="profileclient" />
-                      </div>
-                      <div className="profile-detail">
-                        <h4> R K Agrawal</h4>
-                        {/* <p>Lorem ipsum</p> */}
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="success-story">
-                    <div className="rating-section flex justify-between items-center">
-                      <div className="flex items-center gap-1">
-                        <img src={Star} alt="Star" />
-                        <img src={Star} alt="Star" />
-                        <img src={Star} alt="Star" />
-                        <img src={Star} alt="Star" />
-                        <img src={Star} alt="Star" />
-                      </div>
-                      <div>
-                        <img src={comaicon} alt="comaicon" />
-                      </div>
-                    </div>
-                    <div className="details-story">
-                      <p>
-                        “Retirement is not an age, It’s a financial number. ”
-                      </p>
-                    </div>
-                    <div className="profile-client flex items-center gap-3">
-                      <div className="profile-icon">
-                        <img src={profileclient} alt="profileclient" />
-                      </div>
-                      <div className="profile-detail">
-                        <h4> Robert Kiyosaki</h4>
-                        {/* <p>Lorem ipsum</p> */}
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="success-story">
-                    <div className="rating-section flex justify-between items-center">
-                      <div className="flex items-center gap-1">
-                        <img src={Star} alt="Star" />
-                        <img src={Star} alt="Star" />
-                        <img src={Star} alt="Star" />
-                        <img src={Star} alt="Star" />
-                        <img src={Star} alt="Star" />
-                      </div>
-                      <div>
-                        <img src={comaicon} alt="comaicon" />
-                      </div>
-                    </div>
-                    <div className="details-story">
-                      <p>
-                        “In building a strong foundation, focus on value, not
-                        just price ”
-                      </p>
-                    </div>
-                    <div className="profile-client flex items-center gap-3">
-                      <div className="profile-icon">
-                        <img src={profileclient} alt="profileclient" />
-                      </div>
-                      <div className="profile-detail">
-                        <h4> Warren Buffet</h4>
-                        {/* <p>Lorem ipsum</p> */}
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="success-story">
-                    <div className="rating-section flex justify-between items-center">
-                      <div className="flex items-center gap-1">
-                        <img src={Star} alt="Star" />
-                        <img src={Star} alt="Star" />
-                        <img src={Star} alt="Star" />
-                        <img src={Star} alt="Star" />
-                        <img src={Star} alt="Star" />
-                      </div>
-                      <div>
-                        <img src={comaicon} alt="comaicon" />
-                      </div>
-                    </div>
-                    <div className="details-story">
-                      <p>
-                        “ The biggest adventure you can take is to live the life
-                        of your dreams ”
-                      </p>
-                    </div>
-                    <div className="profile-client flex items-center gap-3">
-                      <div className="profile-icon">
-                        <img src={profileclient} alt="profileclient" />
-                      </div>
-                      <div className="profile-detail">
-                        <h4> Oprah Winfrey </h4>
-                        {/* <p>Lorem ipsum</p> */}
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
+                {successStories.map((story, index) => (
+                  <SwiperSlide key={index}>
+                    <SuccessStorySlide
+                      name={story.name}
+                      review={story.review}
+                      image={profileclient}
+                      ratingIcon={Star}
+                      quoteIcon={comaicon}
+                    />
+                  </SwiperSlide>
+                ))}
               </Swiper>
             </div>
           </div>
