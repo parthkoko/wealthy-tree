@@ -1,13 +1,15 @@
 import React from "react";
-import footerlogo from "../assets/images/footerlogo.svg";
-import facebook from "../assets/images/facebook.svg";
-import twitter from "../assets/images/twitter.svg";
-import linkdin from "../assets/images/linkdin.svg";
-import instagram from "../assets/images/instagram.svg";
-import maps from "../assets/images/maps.svg";
-import phoneicon from "../assets/images/phoneicon.svg";
-import mailicon from "../assets/images/mailicon.svg";
+import footerlogo from "../assets/icons/footerlogo.svg";
+import facebook from "../assets/icons/facebook.svg";
+import twitter from "../assets/icons/twitter.svg";
+import linkdin from "../assets/icons/linkdin.svg";
+import instagram from "../assets/icons/instagram.svg";
+import maps from "../assets/icons/maps.svg";
+import phoneicon from "../assets/icons/phoneicon.svg";
+import mailicon from "../assets/icons/mailicon.svg";
 import { Link } from "react-router-dom";
+
+import mainheaderlogo from "../assets/icons/mainheaderlogo.svg";
 
 const Footer = () => {
   return (
@@ -17,13 +19,13 @@ const Footer = () => {
           <div className="footer-detail-common">
             <div className="logo-footer">
               <a href="/">
-                {" "}
                 <img src={footerlogo} alt="footerlogo" />
               </a>
             </div>
             <p>
-              Lorem ipsum dolor sit amet, consecte Lorem consecte tuer
-              adipiscing elitsed diam nonummy.
+              Wealthy Tree is your trusted financial partner, offering expert
+              solutions in investment planning, insurance advisory, and tax
+              consultation.
             </p>
             <div className="social-media">
               {/* <ul>

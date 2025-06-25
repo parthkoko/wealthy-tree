@@ -1,13 +1,9 @@
 import React from "react";
-import { Container } from "react-bootstrap";
-import Header from "../header";
-import Footer from "./footer";
 import bgabout from "../assets/images/bgabout.png";
 
 const News = () => {
   return (
     <>
-      {/* <Header /> */}
       <div
         className="about-banner-section py-16 text-center  bg-gray-100"
         style={{
@@ -21,8 +17,6 @@ const News = () => {
         <h1 className="text-4xl font-bold">News</h1>
         <p className="text-lg mt-4 text-gray-600">Home / News</p>
       </div>
-
-      <Footer />
     </>
   );
 };

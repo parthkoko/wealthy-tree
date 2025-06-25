@@ -1,26 +1,17 @@
 import React, { useEffect } from "react";
-import { Button } from "react-bootstrap";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import mainheaderlogo from "../assets/images/mainheaderlogo.svg";
 import mainhomebanner from "../assets/images/main-home-banner.png";
-import treeone from "../assets/images/treeone.png";
 import ourservices from "../assets/images/ourservices.png";
-import investsevice from "../assets/images/investsevice.png";
 import blogbg from "../assets/images/blogbg.png";
 import rectangledemo from "../assets/images/rectangledemo.png";
-import investmeanticon from "../assets/images/investmeanticon.svg";
-import righttoparrow from "../assets/images/righttoparrow.svg";
-import Star from "../assets/images/Star.svg";
-import comaicon from "../assets/images/comaicon.svg";
-import profileclient from "../assets/images/profileclient.svg";
-import maleicon from "../assets/images/male-icon.svg";
-import speechicon from "../assets/images/speechicon.svg";
-import calendericon from "../assets/images/calendericon.svg";
-import tex from "../assets/images/tex.svg";
-import insurance from "../assets/images/insurance.svg";
+import investmeanticon from "../assets/icons/investmeanticon.svg";
+import righttoparrow from "../assets/icons/righttoparrow.svg";
+import Star from "../assets/icons/Star.svg";
+import comaicon from "../assets/icons/comaicon.svg";
+import maleicon from "../assets/icons/male-icon.svg";
+import speechicon from "../assets/icons/speechicon.svg";
+import calendericon from "../assets/icons/calendericon.svg";
+import tex from "../assets/icons/tex.svg";
+import insurance from "../assets/icons/insurance.svg";
 import welcomeone from "../assets/images/welcomeone.png";
 import welcometwo from "../assets/images/welcometwo.png";
 import welcomethree from "../assets/images/welcomethree.png";
@@ -31,16 +22,13 @@ import blogfour from "../assets/images/blogfour.png";
 import blogthree from "../assets/images/blogthree.png";
 import blogtwo from "../assets/images/blogtwo.png";
 import blogone from "../assets/images/blogone.png";
-// import baneerinner from "../assets/images/baneerinner.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-// import { Autoplay } from 'swiper/modules';
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import Header from "../header";
-import Footer from "./footer";
+import Footer from "../components/footer";
 import { useNavigate } from "react-router-dom";
 import SuccessStorySlide from "../components/SuccessStorySlide";
 import HomeBannerSlider from "../components/homebannerslider";
@@ -82,65 +70,19 @@ const Home = () => {
 
   return (
     <div className=" main-homepage">
-      {/* <div className='main-header'>
-
-      
-       <Navbar expand="lg" className="">
-      <Container>
-        <Navbar.Brand href="#home"><img src={mainheaderlogo} alt="mainheaderlogo" /></Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" >
-          <Nav className="ms-auto flex main-navbar-data">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#Aboutus">About us</Nav.Link>
-            <NavDropdown title="Services" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#InvestmentServices">Investment Services</NavDropdown.Item>
-              <NavDropdown.Item href="#InsuranceServices">
-                Insurance Services
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#TaxServices">Tax Services</NavDropdown.Item>
-              
-            </NavDropdown>
-            <Nav.Link href="#News">News</Nav.Link>
-            <Nav.Link href="#Blogs">Blogs</Nav.Link>
-            <button className='green-button'>Contact Us</button>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-    </div> */}
-
-      {/* <Header /> */}
-
       <div className="main-home-banner relative w-full">
         <img
           className="w-full h-[600px] object-cover"
           src={mainhomebanner}
           alt="mainhomebanner"
         />
-        {/* <img
-          className="w-full h-[600px] object-cover"
-          src={baneerinner}
-          alt="baneerinner"
-        /> */}
-      
-          <div className="homebanner-detail">
-           <HomeBannerSlider/>
-          </div>
-   
-     
+        ////////////////
+        <HomeBannerSlider />
       </div>
       <div className="welcome-section">
         <div className="wealthy-container">
           <div className="welcome-section-inner">
             <div className="welcome-images">
-              {/* <div className="welcomeimages-grid">
-          <img src={treeone} alt="treeone" />
-          
-        </div> */}
-              {/* <div className="welcomeimages-grid"></div>
-        <div className="welcomeimages-grid"></div>
-        <div className="welcomeimages-grid"></div> */}
               <div className="welcomeimages-grid">
                 <div className="box box1 welcomeimages-grid-inner">
                   <img src={welcomeone} alt="welcomeone" />
@@ -280,9 +222,7 @@ const Home = () => {
         <div className="">
           <div className="client-sucess-main">
             <div className="client-sucess-title">
-              <h2>
-                Our <span> Client Stories</span>
-              </h2>
+              <h2>Testimonials</h2>
             </div>
             {/* <div className="p-4 md:p-8 lg:px-16 py-10"> */}
             <div className="p-4 md:p-8 lg:px-16 py-10 swiper-horizontal">
@@ -308,7 +248,6 @@ const Home = () => {
                     <SuccessStorySlide
                       name={story.name}
                       review={story.review}
-                      image={profileclient}
                       ratingIcon={Star}
                       quoteIcon={comaicon}
                     />
@@ -520,89 +459,6 @@ const Home = () => {
           </Swiper>
         </div>
       </div>
-      {/* <div className="footer-main">
-      <div className="wealthy-container">
-        <div className="footer-inner-detail">
-          <div className="footer-detail-common">
-            <div className="logo-footer">
-              <a href="#"> <img src={footerlogo} alt="footerlogo" /></a>
-             
-            </div>
-             <p>Lorem ipsum dolor sit amet, consecte Lorem consecte tuer adipiscing elitsed diam nonummy.</p>
-          <div className="social-media">
-            <ul>
-              <li>
-                <a href=""><img src={facebook} alt="facebook" /></a>
-              </li>
-              <li>
-                <a href=""><img src={twitter} alt="twitter" /></a>
-              </li>
-              <li>
-                <a href=""><img src={linkdin} alt="linkdin" /></a>
-              </li>
-              <li>
-                <a href=""><img src={instagram} alt="instagram" /></a>
-              </li>
-            </ul>
-          </div>
-          </div>
-          <div className="footer-detail-common">
-            <div className="footer-title-inner">
-              <h3>Quick Links</h3>
-            </div>
-            <div className="footer-manu">
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Blogs</a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="footer-detail-common">
-            <div className="footer-title-inner">
-              <h3>Useful Links</h3>
-            </div>
-            <div className="footer-manu">
-              <ul>
-                <li><a href="#">Mutual fund research</a></li>
-                <li><a href="#">Mutual fund research</a></li>
-                <li><a href="#">Mutual fund research</a></li>
-                
-              </ul>
-            </div>
-          </div>
-          <div className="footer-detail-common">
-            <div className="footer-title-inner">
-              <h3>Contact us</h3>
-            </div>
-            <div className="footer-manu">
-              <ul>
-                <li><a href="#"><span><img src={maps} alt="maps" /></span>2715 Ash Dr. San Jose, South <br /> Dakota 83475</a></li>
-                <li className="flex items-center gap-2">
-                <span>
-                <img src={phoneicon} alt="phoneicon" />
-                </span>
-                 <span>
-                 <a href="tel:+1234567890">+1 234 567 890</a>
-                 <a href="tel:+0987654321">+0 987 654 321</a>
-                 </span>
-                 </li>
-                 <li><a href="mailto:trungkienspktnd@gamail.com"><span><img src={mailicon} alt="mailicon" /></span>trungkienspktnd@gamail.com</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="footer-copyright">
-      </div>
-      <div className="wealthy-container">
-        <div className="footer-copyright-detail">
-          <p> © 2023  Company. All Right Reserved.</p>
-        </div>
-      </div>
-    </div> */}
-      <Footer />
     </div>
   );
 };

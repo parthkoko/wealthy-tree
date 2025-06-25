@@ -38,13 +38,13 @@ body {
 }
 
 /* header css start */
-
+/* 
 .main-header {
   position: sticky;
   top: 0;
   z-index: 10;
   background: white;
-}
+} */
 .green-button {
   padding: 9px 17px;
   border-radius: 50px;
@@ -347,7 +347,7 @@ body {
   /* columns: var(--green-color); */
   color: var(--green-color);
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
 }
 .client-sucess-title h2 span {
   font-size: var(--font-48px);
@@ -381,7 +381,7 @@ body {
   font-size: var(--font-16px);
   font-weight: 500;
   color: var(--secondary-color);
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 .profile-detail p {
   font-size: var(--font-14px);

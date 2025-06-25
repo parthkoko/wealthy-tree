@@ -61,16 +61,12 @@ function ContactForm() {
       });
   };
 
-  if (submitted) {
-    return (
-      <div className="p-6 text-center h-screen flex flex-col items-center justify-center thank-you-message">
-        <h2 className="text-3xl font-bold text-green-600 mb-2">Thank You!</h2>
-        <p className="text-lg">Your message has been submitted successfully.</p>
-      </div>
-    );
-  }
-
-  return (
+  return submitted ? (
+    <div className="p-6 text-center h-screen flex flex-col items-center justify-center thank-you-message">
+      <h2 className="text-3xl font-bold text-green-600 mb-2">Thank You!</h2>
+      <p className="text-lg">Your message has been submitted successfully.</p>
+    </div>
+  ) : (
     <div>
       <h2 className="text-3xl font-bold mb-2">Have any Questions?</h2>
       <p className="text-gray-400 mb-6 text-[14px]">
@@ -110,7 +106,7 @@ function ContactForm() {
             {errors.email && <p className="text-red-500">{errors.email}</p>}
           </div>
 
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             <div className="inputcommon-group">
               <label className="input-lable">
                 Subject <span className="red-text">*</span>
@@ -128,6 +124,7 @@ function ContactForm() {
                 <p className="text-red-500">{errors.subject}</p>
               )}
             </div>
+
             <div className="inputcommon-group">
               <label className="input-lable">
                 Phone Number <span className="red-text">*</span>

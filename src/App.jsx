@@ -2,7 +2,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Header from "./header";
+import Header from "./components/header";
 import Home from "./pages/home";
 import Aboutus from "./pages/aboutus";
 import News from "./pages/news";
@@ -11,6 +11,7 @@ import InvestmentServices from "./pages/InvestmentServices";
 import InsuranceServices from "./pages/insuranceservices";
 import TaxServices from "./pages/taxservices";
 import ContactUs from "./pages/contactus";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
         <Route path="/taxservices" element={<TaxServices />} />
         <Route path="/contactus" element={<ContactUs />} />
       </Routes>
+
+      <Footer />
     </Router>
   );
 }

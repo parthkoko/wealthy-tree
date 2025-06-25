@@ -1,8 +1,8 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
-import 'swiper/css';
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+import { useNavigate } from "react-router-dom";
 
 const HomeBannerSlider = () => {
   const navigate = useNavigate();
@@ -22,10 +22,13 @@ const HomeBannerSlider = () => {
         <SwiperSlide>
           <div className="homebanner-detail text-white p-8">
             <h2 className="text-4xl font-bold mb-4">
-              Grow Wealth. <span className="text-yellow-400">Fulfill Dreams.</span>
+              Grow Wealth.{" "}
+              <span className="text-yellow-400">Fulfill Dreams.</span>
             </h2>
             <p className="mb-6">
-              From Smart Investments to Secure Insurance and Trusted Tax Solutions — WEALTHY TREE is your all-in-one financial growth partner.
+              From Smart Investments to Secure Insurance and Trusted Tax
+              Solutions — WEALTHY TREE is your all-in-one financial growth
+              partner.
             </p>
             <button
               onClick={() => navigate("/contactus")}
@@ -37,23 +40,35 @@ const HomeBannerSlider = () => {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="homebanner-detail banner-slidertext text-white ">
+          <div className="homebanner-detail banner-slidertext text-white w-[65%]">
             <p>"Retirement is not an age, it’s a financial number." </p>
-            <p className='text-end'><span>– Robert Kiyosaki</span></p>
+            <p className="text-end">
+              <span>– Robert Kiyosaki</span>
+            </p>
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="homebanner-detail banner-slidertext text-white ">
-            <p>"In building a strong foundation, focus on value, not just price." <br /> </p>
-            <p className='text-end'><span>– Warren Buffett</span></p>
+          <div className="homebanner-detail banner-slidertext text-white w-[65%]">
+            <p>
+              "In building a strong foundation, focus on value, not just price."{" "}
+              <br />{" "}
+            </p>
+            <p className="text-end">
+              <span>– Warren Buffett</span>
+            </p>
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="homebanner-detail banner-slidertext text-white ">
-            <p>"The biggest adventure you can take is to live the life of your dreams!" <br /> </p>
-            <p className='text-end'><span>– Oprah Winfrey</span></p>
+          <div className="homebanner-detail banner-slidertext text-white w-[65%]">
+            <p>
+              "The biggest adventure you can take is to live the life of your
+              dreams!" <br />{" "}
+            </p>
+            <p className="text-end">
+              <span>– Oprah Winfrey</span>
+            </p>
           </div>
         </SwiperSlide>
       </Swiper>
