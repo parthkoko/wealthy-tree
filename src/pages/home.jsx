@@ -31,7 +31,7 @@ import "swiper/css/pagination";
 import Footer from "../components/footer";
 import { useNavigate } from "react-router-dom";
 import SuccessStorySlide from "../components/SuccessStorySlide";
-import HomeBannerSlider from "../components/homebannerslider";
+import HomeBannerSlider from "../components/HomeBannerSlider";
 
 const Home = () => {
   useEffect(() => {
