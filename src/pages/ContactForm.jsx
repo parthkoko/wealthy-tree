@@ -3,7 +3,7 @@ import emailjs from "emailjs-com";
 
 const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
 const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
-const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
+const PUBLIC_KEY = import.meta.env.VITE_PUBLIC;
 
 function ContactForm() {
   const [formData, setFormData] = useState({
