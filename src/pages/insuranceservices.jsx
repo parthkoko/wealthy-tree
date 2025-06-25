@@ -1,7 +1,13 @@
 import React, { useEffect } from "react";
 import investsevice from "../assets/images/investsevice.png";
 import insurancebg from "../assets/images/insurancebg.png";
-import investmeanticon from "../assets/icons/investmeanticon.svg";
+import lifeinsurance from "../assets/images/lifeinsurance.png";
+import healthinsuranceimg from "../assets/images/healthinsuranceimg.png";
+import generalinsuranceimg from "../assets/images/generalinsuranceimg.png";
+// import investmeanticon from "../assets/icons/investmeanticon.svg";
+import insurance from "../assets/icons/insurance.svg";
+import healthinsurance from "../assets/icons/healthinsurance.svg";
+import generalinsurance from "../assets/icons/generalinsurance.svg";
 import ServiceCard from "../components/ServiceCard";
 
 const InsuranceServices = () => {
@@ -14,16 +20,22 @@ const InsuranceServices = () => {
       title: "Life Insurance",
       description:
         "Ensure your family’s financial safety even in your absence. We help you choose the right term and endowment plans.",
+      image: lifeinsurance,
+      icon: insurance,
     },
     {
       title: "Health Insurance",
       description:
         "Stay protected from rising medical costs with customized health coverage that fits your lifestyle.",
+      image: healthinsuranceimg,
+      icon:healthinsurance,
     },
     {
       title: "General Insurance",
       description:
         "Safeguard your assets - home, travel, vehicles, and more - with the right general insurance plans.",
+      image: generalinsuranceimg,
+      icon: generalinsurance,
     },
   ];
 
@@ -54,9 +66,9 @@ const InsuranceServices = () => {
             {insuranceServices.map((service, index) => (
               <ServiceCard
                 key={index}
-                image={investsevice}
+                image={service.image}
                 alt="insurance service image"
-                icon={investmeanticon}
+                icon={service.icon}
                 iconAlt="insurance icon"
                 title={service.title}
                 description={service.description}

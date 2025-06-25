@@ -10,7 +10,7 @@ import comaicon from "../assets/icons/comaicon.svg";
 import maleicon from "../assets/icons/male-icon.svg";
 import speechicon from "../assets/icons/speechicon.svg";
 import calendericon from "../assets/icons/calendericon.svg";
-import tex from "../assets/icons/tex.svg";
+import texticon from "../assets/icons/texticon.svg";
 import insurance from "../assets/icons/insurance.svg";
 import welcomeone from "../assets/images/welcomeone.png";
 import welcometwo from "../assets/images/welcometwo.png";
@@ -196,7 +196,7 @@ const Home = () => {
                 <div className="ourservice-inner-card-data">
                   <img src={servicesthree} alt="servicesthree" />
                   <div className="serviceinner-card-details">
-                    <img className="invest-grey-round" src={tex} alt="tex" />
+                    <img className="invest-grey-round" src={texticon} alt="texticon" />
                     <h3>Tax Services</h3>
                     <p>
                       Simplify your Tax Filings & all Compliances related to
