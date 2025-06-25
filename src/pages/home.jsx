@@ -76,7 +76,7 @@ const Home = () => {
           src={mainhomebanner}
           alt="mainhomebanner"
         />
-        ////////////////
+   
         <HomeBannerSlider />
       </div>
       <div className="welcome-section">
