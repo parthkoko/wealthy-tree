@@ -28,7 +28,6 @@ import "swiper/css";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import Footer from "../components/footer";
 import { useNavigate } from "react-router-dom";
 import SuccessStorySlide from "../components/SuccessStorySlide";
 import HomeBannerSlider from "../components/HomeBannerSlider";
