@@ -5,7 +5,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import mainheaderlogo from "../assets/images/mainheaderlogo.svg";
-import homebanner from "../assets/images/homebanner.png";
+import mainhomebanner from "../assets/images/main-home-banner.png";
 import treeone from "../assets/images/treeone.png";
 import ourservices from "../assets/images/ourservices.png";
 import investsevice from "../assets/images/investsevice.png";
@@ -19,14 +19,6 @@ import profileclient from "../assets/images/profileclient.svg";
 import maleicon from "../assets/images/male-icon.svg";
 import speechicon from "../assets/images/speechicon.svg";
 import calendericon from "../assets/images/calendericon.svg";
-import footerlogo from "../assets/images/footerlogo.svg";
-import facebook from "../assets/images/facebook.svg";
-import twitter from "../assets/images/twitter.svg";
-import linkdin from "../assets/images/linkdin.svg";
-import instagram from "../assets/images/instagram.svg";
-import maps from "../assets/images/maps.svg";
-import phoneicon from "../assets/images/phoneicon.svg";
-import mailicon from "../assets/images/mailicon.svg";
 import tex from "../assets/images/tex.svg";
 import insurance from "../assets/images/insurance.svg";
 import welcomeone from "../assets/images/welcomeone.png";
@@ -39,6 +31,7 @@ import blogfour from "../assets/images/blogfour.png";
 import blogthree from "../assets/images/blogthree.png";
 import blogtwo from "../assets/images/blogtwo.png";
 import blogone from "../assets/images/blogone.png";
+// import baneerinner from "../assets/images/baneerinner.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -50,6 +43,7 @@ import Header from "../header";
 import Footer from "./footer";
 import { useNavigate } from "react-router-dom";
 import SuccessStorySlide from "../components/SuccessStorySlide";
+import HomeBannerSlider from "../components/homebannerslider";
 
 const Home = () => {
   useEffect(() => {
@@ -121,29 +115,20 @@ const Home = () => {
       <div className="main-home-banner relative w-full">
         <img
           className="w-full h-[600px] object-cover"
-          src={homebanner}
-          alt="homebanner"
+          src={mainhomebanner}
+          alt="mainhomebanner"
         />
-        <Container>
+        {/* <img
+          className="w-full h-[600px] object-cover"
+          src={baneerinner}
+          alt="baneerinner"
+        /> */}
+      
           <div className="homebanner-detail">
-            <h2>
-              {" "}
-              Grow Wealth. <span>Fulfill Dreams.</span>
-            </h2>
-            <p>
-              From Smart Investments to Secure Insurance and Trusted Tax
-              Solutions - WEALTHY TREE is your All-in-one Financial Growth
-              Partner.
-            </p>
-            <button
-              onClick={() => navigate("/contactus")}
-              className="white-button"
-            >
-              {" "}
-              Start Your Wealth Creation Journey
-            </button>
+           <HomeBannerSlider/>
           </div>
-        </Container>
+   
+     
       </div>
       <div className="welcome-section">
         <div className="wealthy-container">

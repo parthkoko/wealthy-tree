@@ -5,7 +5,7 @@ import Footer from "./footer";
 import bgabout from "../assets/images/bgabout.png";
 import welcometrerone from "../assets/images/welcometrerone.png";
 import weltreetwo from "../assets/images/weltreetwo.png";
-import aboutbg from "../assets/images/aboutbg.png";
+import aboutusbanner from "../assets/images/aboutusbanner.png";
 import ourmission from "../assets/images/ourmission.svg";
 import ourvision from "../assets/images/ourvision.svg";
 
@@ -19,7 +19,7 @@ const Aboutus = () => {
       <div
         className="about-banner-section py-16 text-center bg-gray-100 relative"
         style={{
-          backgroundImage: `url(${aboutbg})`,
+          backgroundImage: `url(${aboutusbanner})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "600px",
@@ -27,11 +27,11 @@ const Aboutus = () => {
         }}
       >
         {/* Dark Overlay */}
-        <div className="absolute inset-0 w-full h-full bg-black opacity-50"></div>
+        {/* <div className="absolute inset-0 w-full h-full bg-black opacity-50"></div> */}
 
         <div className="relative z-10">
           <h1 className="text-[70px] font-bold text-[#fff]">
-            About WEALTHY TREE
+            About <span className="font-bold text-[#76ac5a]">WEALTHY TREE</span>
           </h1>
           <p className="text-[26px] mt-4 text-[#fff]">
             Nurturing Wealth. Fulfilling Dreams.
