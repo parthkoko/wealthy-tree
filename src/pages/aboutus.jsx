@@ -1,13 +1,9 @@
 import React, { useEffect } from "react";
-import { Container } from "react-bootstrap";
-import Header from "../header";
-import Footer from "./footer";
-import bgabout from "../assets/images/bgabout.png";
 import welcometrerone from "../assets/images/welcometrerone.png";
 import weltreetwo from "../assets/images/weltreetwo.png";
 import aboutusbanner from "../assets/images/aboutusbanner.png";
-import ourmission from "../assets/images/ourmission.svg";
-import ourvision from "../assets/images/ourvision.svg";
+import ourmission from "../assets/icons/ourmission.svg";
+import ourvision from "../assets/icons/ourvision.svg";
 
 const Aboutus = () => {
   useEffect(() => {
@@ -15,7 +11,6 @@ const Aboutus = () => {
   }, []);
   return (
     <>
-      {/* <Header /> */}
       <div
         className="about-banner-section py-16 text-center bg-gray-100 relative"
         style={{
@@ -114,20 +109,6 @@ const Aboutus = () => {
           </div>
         </div>
       </div>
-      {/* <div className="ourvision-section">
-  <div className="wealthy-container">
-      <div className="ourvision-block">
-          <div className="treeblock-images">
-            <img className='relative' src={welcometrerone} alt="welcometrerone" />
-          </div>
-          <div className="treeblock-details">
-           
-            <p></p>
-          </div>
-        </div>
-    </div>
-</div> */}
-      <Footer />
     </>
   );
 };

@@ -1,8 +1,4 @@
 import React, { useEffect } from "react";
-import { Container } from "react-bootstrap";
-import Header from "../header";
-import Footer from "./footer";
-import bgabout from "../assets/images/bgabout.png";
 import contactbg from "../assets/images/contactbg.png";
 import ContactForm from "./ContactForm";
 
@@ -12,7 +8,6 @@ const ContactUs = () => {
   }, []);
   return (
     <>
-      {/* <Header /> */}
       <div
         className="about-banner-section py-16 text-center bg-gray-100 relative"
         style={{
@@ -50,7 +45,6 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

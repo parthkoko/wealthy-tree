@@ -1,10 +1,8 @@
 import React from "react";
-import { Button } from "react-bootstrap";
-import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import mainheaderlogo from "./assets/images/mainheaderlogo.svg";
+import mainheaderlogo from "../assets/icons/mainheaderlogo.svg";
 import { NavLink, useNavigate } from "react-router-dom"; // use NavLink here!
 
 const Header = () => {
@@ -14,7 +12,6 @@ const Header = () => {
     navigate("/contactus");
   };
 
-  // You can define a function to add active styling:
   const getNavLinkClass = ({ isActive }) =>
     isActive ? "nav-link active" : "nav-link";
 
