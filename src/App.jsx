@@ -1,5 +1,5 @@
 // App.js
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Header from "./components/header";
@@ -14,6 +14,11 @@ import ContactUs from "./pages/contactus";
 import Footer from "./components/footer";
 
 function App() {
+  useEffect(() => {
+
+    console.log("Powered by KOKO STUDIO")
+  }, [])
+
   return (
     <Router>
       {/* If Header is meant to be visible on all pages */}

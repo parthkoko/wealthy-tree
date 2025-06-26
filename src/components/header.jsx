@@ -36,7 +36,16 @@ const Header = () => {
                 <Nav.Link as={NavLink} to="/about" className={getNavLinkClass}>
                   About Us
                 </Nav.Link>
-                <NavDropdown title="Services" id="basic-nav-dropdown">
+                <Nav.Link as={NavLink} to="/investmentservices" className={getNavLinkClass}>
+                  Investment
+                </Nav.Link>
+                <Nav.Link as={NavLink} to="/insuranceservices" className={getNavLinkClass}>
+                 Insurance
+                </Nav.Link>
+                <Nav.Link as={NavLink} to="/taxservices" className={getNavLinkClass}>
+                 Tax
+                </Nav.Link>
+                {/* <NavDropdown title="Services" id="basic-nav-dropdown">
                   <NavDropdown.Item
                     as={NavLink}
                     to="/investmentservices"
@@ -58,7 +67,7 @@ const Header = () => {
                   >
                     Tax Services
                   </NavDropdown.Item>
-                </NavDropdown>
+                </NavDropdown> */}
                 {/* <Nav.Link as={NavLink} to="/news" className={getNavLinkClass}>
                   News
                 </Nav.Link>

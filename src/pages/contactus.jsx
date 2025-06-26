@@ -23,7 +23,7 @@ const ContactUs = () => {
 
         <div className="relative z-10">
           <h1 className="text-[70px] font-bold text-[#fff]">Contact Us</h1>
-          <p className="text-[26px] mt-4 text-[#fff]">Home / Contact us</p>
+          {/* <p className="text-[26px] mt-4 text-[#fff]">Home / Contact us</p> */}
         </div>
       </div>
       <div className="contact-data-block">

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import welcometrerone from "../assets/images/welcometrerone.png";
 import weltreetwo from "../assets/images/weltreetwo.png";
 import aboutusbanner from "../assets/images/aboutusbanner.png";
+import welcomeaboutimg from "../assets/images/welcomeaboutimg.png";
 import ourmission from "../assets/icons/ourmission.svg";
 import ourvision from "../assets/icons/ourvision.svg";
 
@@ -48,9 +49,7 @@ const Aboutus = () => {
                 alt="weltreetwo"
               />
               <div className="round-blue-badge">
-                <p>
-                  5+<span>Experiences</span>
-                </p>
+                <img src={welcomeaboutimg} alt="welcomeaboutimg" />
               </div>
             </div>
             <div className="treeblock-details-about">

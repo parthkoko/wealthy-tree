@@ -22,6 +22,7 @@ import blogfour from "../assets/images/blogfour.png";
 import blogthree from "../assets/images/blogthree.png";
 import blogtwo from "../assets/images/blogtwo.png";
 import blogone from "../assets/images/blogone.png";
+import welcomewealthyfour from "../assets/images/welcomewealthyfour.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -91,12 +92,7 @@ const Home = () => {
                 </div>
                 <div className="box box3 welcomeimages-grid-inner">
                   <div className="welcomeimages-grid-inner-text">
-                    <strong>5+</strong>
-                    <span>
-                      years of
-                      <br />
-                      experiences
-                    </span>
+                  <img src={welcomewealthyfour} alt="welcomewealthyfour" />
                   </div>
                 </div>
                 <div className="box box4 welcomeimages-grid-inner">

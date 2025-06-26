@@ -187,7 +187,7 @@ body {
   margin-left: auto;
   margin-bottom: 60px;
   color: var(--primary-color);
-  background-color: var(--green-color);
+  /* background-color: var(--green-color); */
 }
 
 .welcomeimages-grid-inner:nth-child(4) {
@@ -201,16 +201,11 @@ body {
   font-family: sans-serif;
 }
 
-.welcomeimages-grid-inner-text strong {
-  font-size: var(--font-46px);
-  font-weight: bold;
-  display: block;
+.welcomeimages-grid-inner-text img {
+ width: 217px;
+ height: 217px;
 }
 
-.welcomeimages-grid-inner-text span {
-  font-size: var(--font-16px);
-  color: var(--primary-color);
-}
 
 /* our services */
 .ourservice-inner-data {
@@ -655,6 +650,10 @@ body {
   bottom: 115px;
   left: 250px;
 }
+.round-blue-badge img{
+   width: 190px;
+  height: 190px;
+}
 .round-blue-badge p {
   font-size: var(--font-48px);
   font-weight: 700;
@@ -874,11 +873,11 @@ body {
 } */
 
 .banner-slidertext p{
-  font-size: 40px;
-  max-width: 1200px;
+  font-size: var(--font-30px);
+  max-width: 50%;
   margin-bottom: 0px;
 }
 .banner-slidertext p span{
-  font-size: 40px;
+  font-size: var(--font-30px);
   
 }

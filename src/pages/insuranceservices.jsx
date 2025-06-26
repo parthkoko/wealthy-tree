@@ -57,7 +57,7 @@ const InsuranceServices = () => {
           <h1 className="text-[70px] font-bold text-[#fff]">
             Insurance Services
           </h1>
-          <p className="text-[26px] mt-4 text-[#fff]">Home / Services</p>
+          {/* <p className="text-[26px] mt-4 text-[#fff]">Home / Services</p> */}
         </div>
       </div>
       <div className="investmeant-services">

@@ -16,6 +16,10 @@
     bottom: 95px;
     left: 240px;
   }
+  .round-blue-badge img{
+   width: 170px;
+  height: 170px;
+}
 }
 
 @media only screen and (max-width: 1699px) {
@@ -50,6 +54,10 @@
     bottom: 90px;
     left: 150px;
   }
+  .round-blue-badge img{
+   width: 150px;
+  height: 150px;
+}
   .round-blue-badge p {
     font-size: 40px;
   }
@@ -150,6 +158,10 @@
     height: 147px;
     width: 147px;
   }
+  .welcomeimages-grid-inner-text img {
+ width: 147px;
+ height: 147px;
+}
   .welcomeimages-grid {
     max-width: 540px;
     margin: 0 auto;
@@ -251,6 +263,10 @@
     height: 140px;
     width: 140px;
   }
+  .welcomeimages-grid-inner-text img {
+ width: 140px;
+ height: 140px;
+}
   .welcomeimages-grid {
     max-width: 500px;
     margin: 0 auto;
@@ -290,6 +306,10 @@
   .input-field {
     height: 50px;
   }
+      .main-home-banner img {
+        height: 500px;
+        /* object-fit: fill; */
+    }
 }
 @media only screen and (max-width: 1365px) {
 }
@@ -326,17 +346,20 @@
     --font-12px: 12px;
   }
 
-  .homebanner-detail {
+  /* .homebanner-detail {
     position: absolute;
     top: 70px;
     left: 50px;
-  }
+  } */
   .main-navbar-data {
     grid-gap: 20px;
   }
   .homebanner-detail p {
     max-width: 430px;
   }
+  /* .homebanner-detail.banner-slidertext p {
+    max-width: unset;
+  } */
   .welcomeimages-grid-inner img {
     border-radius: 25px;
     width: 210px;
@@ -357,6 +380,10 @@
     height: 120px;
     width: 120px;
   }
+  .welcomeimages-grid-inner-text img {
+ width: 120px;
+ height: 120px;
+}
   .welcomeimages-grid {
     max-width: 440px;
     margin: 0 auto;
@@ -425,6 +452,10 @@
     bottom: 30px;
     left: 100px;
   }
+  .round-blue-badge img{
+   width: 120px;
+  height: 120px;
+}
   .welcometree-block {
     grid-template-columns: auto 460px;
   }
@@ -515,13 +546,13 @@
   }
 
   .homebanner-detail p {
-    max-width: 535px;
+    max-width: 50%;
   }
-  .homebanner-detail {
+  /* .homebanner-detail {
     position: absolute;
     top: 30px;
     left: 30px;
-  }
+  } */
   .main-header-details {
     display: grid;
     grid-template-columns: 150px auto;
@@ -564,6 +595,9 @@
     display: flex;
     grid-gap: 5px;
   }
+  .main-home-banner img {
+        height: 430px;
+  }
 }
 @media only screen and (max-width: 767px) {
   :root {
@@ -589,9 +623,7 @@
     padding: 5px 9px;
   }
   .homebanner-detail {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 30px;
   }
   .welcome-section {
     padding: 50px 0px;
@@ -601,7 +633,7 @@
   }
   .main-home-banner img {
     height: 300px;
-    object-fit: fill;
+    /* object-fit: fill; */
   }
   .ourservice-inner-card {
     display: grid;
@@ -649,11 +681,21 @@
     grid-template-columns: 1fr;
     grid-gap: 40px;
   }
+  .main-header-details .navbar-toggler:focus{
+    box-shadow: none;
+  }
+  .homebanner-detail p {
+        max-width: 70%;
+    }
+    .banner-slidertext p{
+      max-width: 50%;
+    }
 }
 @media only screen and (max-width: 575px) {
-  .homebanner-detail p {
-    max-width: 295px;
-  }
+     :root {
+        
+     }
+
   .main-home-banner img {
     height: 310px;
   }
@@ -675,14 +717,26 @@
     width: 45px;
     height: 45px;
   }
+  /* .banner-swiper {
+    top: 30px;
+    left: 30px;
+} */
+.homebanner-detail h2 {
+  margin-bottom: 20px !important;
+}
+    .homebanner-detail p {
+        margin-bottom: 20px;
+    }
+   
+    .homebanner-detail {
+    top: 20px;
+  }
 }
 @media only screen and (max-width: 480px) {
   :root {
-    --font-68px: 32px;
-    --font-80px: 34px;
-    --font-80px: 40px;
-    --font-68px: 34px;
-    --font-48px: 34px;
+    --font-80px: 30px;
+        --font-68px: 30px;
+        --font-48px: 30px;
     --font-46px: 28px;
     --font-30px: 16px;
     --font-26px: 14px;
@@ -716,6 +770,10 @@
     width: 80px;
     border-radius: 15px;
   }
+  .welcomeimages-grid-inner-text img {
+ width: 80px;
+ height: 80px;
+}
   .welcomeimages-grid {
     max-width: 440px;
     margin: 0 auto;
@@ -729,7 +787,7 @@
     font-size: 14px;
   }
   .main-home-banner img {
-    height: 280px;
+    height: 210px;
   }
   .contact-form-main h2 {
     font-size: 26px;
@@ -746,12 +804,12 @@
     width: 260px;
     height: 330px;
   }
-  .welcomeimges-inner {
-    margin-left: 90px;
-    margin-top: -52px;
-    width: 223px;
-    height: 137px;
-  }
+      .welcomeimges-inner {
+        margin-left: 90px;
+        margin-top: -52px;
+        width: 193px;
+        height: 127px;
+    }
   .round-blue-badge {
     width: 100px;
     height: 100px;
@@ -759,6 +817,10 @@
     left: 33px;
     border: 6px solid var(--primary-color);
   }
+  .round-blue-badge img{
+   width: 100px;
+  height: 100px;
+}
   .round-blue-badge p {
     font-size: 26px;
   }
@@ -787,6 +849,31 @@
     width: 42px;
     height: 42px;
   }
+    .input-textarea {
+        height: 100px;
+        border-radius: 10px;
+    }
+ .contact-map iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+        .homebanner-detail p {
+        max-width: 90%;
+    }
+      .homebanner-detail {
+    top: 10px;
+  }
+      .homebanner-detail h2 {
+        margin-bottom: 10px !important;
+    }
+    .homebanner-detail p {
+    margin-bottom: 10px !important;
+}
+.banner-slidertext {
+  margin-bottom: 0;
+  max-width: 60%;
+}
 }
 @media only screen and (max-width: 389px) {
 }
@@ -798,18 +885,18 @@
 
   .welcomeimages-grid-inner img {
     border-radius: 15px;
-    width: 150px;
+    width: 140px;
   }
   .welcomeimages-grid-inner:nth-child(1) {
-    width: 150px;
+    width: 140px;
     height: fit-content;
   }
   .welcomeimages-grid-inner:nth-child(2) {
     height: auto;
-    width: 150px;
+    width: 140px;
   }
   .welcomeimages-grid-inner:nth-child(4) {
-    width: 150px;
+    width: 140px;
     height: fit-content;
   }
   .welcomeimages-grid-inner:nth-child(3) {
@@ -817,8 +904,12 @@
     width: 80px;
     border-radius: 15px;
   }
+  .welcomeimages-grid-inner-text img {
+ width: 80px;
+ height: 80px;
+}
   .welcomeimages-grid {
-    max-width: 440px;
+    max-width: 400px;
     margin: 0 auto;
     grid-gap: 10px;
   }
@@ -826,5 +917,27 @@
     height: 70px;
     width: 70px;
     margin-top: -35px;
+    object-fit: cover;
+        border: 4px solid var(--primary-color);
   }
+  .welcomeimages-grid-inner-text span{
+    font-size: 12px;
+    
+  }
+    .homebanner-detail p {
+    margin-bottom: 15px !important;
+    font-size: 12px;
+}
+ .homebanner-detail h2 {
+        margin-bottom: 12px !important;
+    }
+     .homebanner-detail p {
+        max-width: 95%;
+    }
+    .banner-slidertext p {
+  margin-bottom: 0;
+  max-width: 80%;
+  font-size: 14px;
+}
+  
 }

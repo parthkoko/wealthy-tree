@@ -140,9 +140,9 @@ const InvestmentServices = () => {
           <h1 className="text-[70px] font-bold text-[#fff]">
             Investment Services
           </h1>
-          <p className="text-[26px] mt-4 text-gray-600 text-[#fff]">
+          {/* <p className="text-[26px] mt-4 text-gray-600 text-[#fff]">
             Home / Services
-          </p>
+          </p> */}
         </div>
       </div>
 
