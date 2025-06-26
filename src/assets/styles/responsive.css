@@ -690,6 +690,9 @@
     .banner-slidertext p{
       max-width: 50%;
     }
+    .banner-slidertext {
+      top: 70px;
+    }
 }
 @media only screen and (max-width: 575px) {
      :root {
@@ -731,6 +734,9 @@
     .homebanner-detail {
     top: 20px;
   }
+    .banner-slidertext {
+      top: 70px;
+    }
 }
 @media only screen and (max-width: 480px) {
   :root {
@@ -874,6 +880,9 @@
   margin-bottom: 0;
   max-width: 60%;
 }
+ .banner-slidertext {
+      top: 60px;
+    }
 }
 @media only screen and (max-width: 389px) {
 }
@@ -939,5 +948,8 @@
   max-width: 80%;
   font-size: 14px;
 }
+.banner-slidertext {
+      top: 50px;
+    }
   
 }
