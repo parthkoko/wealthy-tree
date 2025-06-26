@@ -38,13 +38,13 @@ body {
 }
 
 /* header css start */
-/* 
-.main-header {
+.main-header{
   position: sticky;
-  top: 0;
-  z-index: 10;
-  background: white;
-} */
+    top: 0;
+    z-index: 20;
+    background: white;
+    box-shadow: 0 0 5px #d2d2d2; 
+}
 .green-button {
   padding: 9px 17px;
   border-radius: 50px;

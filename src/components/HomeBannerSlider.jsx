@@ -4,6 +4,7 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { useNavigate } from "react-router-dom";
 import mainhomebanner from "../assets/images/main-home-banner.png";
+import finalbanner from "../assets/images/finalbanner.png";
 import robort from "../assets/images/robort.svg";
 import warren from "../assets/images/warren.svg";
 import oprah from "../assets/images/oprah.svg";
@@ -17,11 +18,11 @@ const HomeBannerSlider = () => {
         spaceBetween={30}
         slidesPerView={1}
         loop={true}
-        // autoplay={{
-        //   delay: 4000,
-        //   disableOnInteraction: false,
-        // }}
-        // modules={[Autoplay]}
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay]}
       >
         {/* Slide 1 */}
       <SwiperSlide>
@@ -29,8 +30,8 @@ const HomeBannerSlider = () => {
     {/* Background Image */}
     <img
       className="w-full h-full object-cover"
-      src={mainhomebanner}
-      alt="mainhomebanner"
+      src={finalbanner}
+      alt="finalbanner"
     />
 
     {/* Overlay Text */}
